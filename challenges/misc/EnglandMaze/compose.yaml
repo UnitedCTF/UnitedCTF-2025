@@ -1,0 +1,4 @@
+services:
+  web:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/england-maze:latest

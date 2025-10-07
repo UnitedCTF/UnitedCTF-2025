@@ -1,0 +1,39 @@
+name: Generate CTF badges
+on:
+  push:
+    branches:
+      - main
+      - badges-test
+
+permissions:
+  contents: write
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install python dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Create "badges" branch
+        continue-on-error: true
+        run: |
+          git fetch
+          git branch badges --force
+          git checkout badges
+
+      - name: Generate badges and charts
+        run: |
+          python ctf.py stats --generate-badges --charts
+
+      - name: Git commit && git push
+        run: |
+          git add .badges .charts
+          git config --global user.email "info@unitedctf.ca"
+          git config --global user.name "UnitedCTF Badge Bot (Github Actions)"
+          git commit -m "Update badges and charts"
+          git push origin badges --force

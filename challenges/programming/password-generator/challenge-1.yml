@@ -1,0 +1,36 @@
+name: Password Generator 1
+author: Capucinoxx
+category: Programmation
+description: |-
+  ## Description (français)
+
+  J'en ai marre ... ! Chaque pays que je visite utilise des applications
+  différentes avec pour chacune des règles de mot de passe différentes ...
+
+  En voilà une bonne: l'autre jour, j'étais en voyage chez mon cousin
+  aux États-Unis et pour installer Tok Tok (oui je sais ...) il y avait
+  des règles de mot de passe à ne plus en finir ...
+
+  ## Description (english)
+
+  I'm fed up...! Every country I visit uses different applications,
+  each with different password rules...
+
+  Here's a good one: the other day, I was traveling to visit my cousin
+  in the United States and to install Tok Tok (yes I know...)
+  there were endless password rules...
+value: 3
+
+image: ghcr.io/unitedctf/unitedctf2025/password-generator:latest
+connection_info: https://password-generator.challenges.unitedctf.ca/
+
+flags:
+- flag-ssssssTr000NNNNNNGGG-pa$$word
+
+tags:
+- A:Capucinoxx
+- V:États-Unis, Burlington
+- CFSS:0.3/TS:L/E:M/HSFC:N=3-5
+deploy_parameters:
+  chall_name: password-generator
+playbook_name: static_http

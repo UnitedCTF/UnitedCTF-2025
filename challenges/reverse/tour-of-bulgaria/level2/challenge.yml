@@ -1,0 +1,48 @@
+name: Пловдивски Пароли (Plovdiv Passwords)
+author: Atlantis11656
+category: Rétro-ingénierie
+description: |-
+  ## Description (english)
+
+  You've taken the train from Sofia to Plovdiv, Bulgaria's cultural capital and one of Europe's oldest cities. The ancient Roman Theatre overlooks the city as you check into your hotel. The receptionist mentions that they are booked for the night. However, she informs you about a certain "Room 0x55", that has been locked for years now. All they know is that the room requires a special authentication using an old system.
+
+  Your task: Authenticate with the ancient system by providing the correct key.
+
+  The ancient and modern blend seamlessly here - solve this digital riddle to continue your journey!
+
+  ## Description (français)
+
+  Vous avez pris le train de Sofia à Plovdiv, la capitale culturelle de la Bulgarie et l'une des plus anciennes villes d'Europe. L'ancien théâtre romain surplombe la ville pendant que vous vous enregistrez à votre hôtel. La réceptionniste mentionne qu'ils sont complets pour la nuit. Cependant, elle vous informe à propos d'une certaine "Chambre 0x55", qui a été verrouillée depuis des années maintenant. Tout ce qu'ils savent, c'est que la chambre nécessite une authentification spéciale utilisant un ancien système.
+
+  Votre tâche : S'authentifier avec le système ancien en fournissant la bonne clé.
+
+  L'ancien et le moderne se mélangent harmonieusement ici - résolvez cette énigme numérique pour continuer votre voyage !
+value: 1
+
+image: ghcr.io/unitedctf/unitedctf2025/tour-of-bulgaria/part-2:latest
+connection_info: tcp://challenges.unitedctf.ca:32778/
+
+flags:
+- flag-99731903-88d3-41bb-b302-fe23e10a66c9
+
+files:
+- commands_v0_1.en.pdf
+- commands_v0_1.fr.pdf
+
+tags:
+- A:Atlantis11656
+- V:Bulgarie, Plovdiv
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+
+hints:
+- >-
+  La clée est quelque part dans la description du challenge. The key is somewhere
+  in the challenge description.
+
+requirements:
+- Софийски Код (Sofia Code)
+playbook_name: tcp
+deploy_parameters:
+  chall_name: tour-of-bulgaria-2
+  published_ports:
+  - 1438

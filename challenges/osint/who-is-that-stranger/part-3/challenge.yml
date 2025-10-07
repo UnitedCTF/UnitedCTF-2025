@@ -1,0 +1,40 @@
+name: Who is that stranger 3
+author: Laurent Mercier
+category: OSINT
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+
+value: 2
+
+description: |-
+  ## Description (français)
+
+  Après avoir épluché ses dépôts de code, le mystère de l’homme au chapeau demeure entier. Vous savez désormais qui apparaît sur la photo, mais celui qui se cachait derrière l’objectif reste encore inconnu.<br>
+  Vous avez l’intuition que découvrir le photographe vous mènera peut-être enfin vers l’identité du mystérieux inconnu.<br>
+  Après tout, l'homme au chapeau avait une caméra argentique au cou quand vous l'avez rencontré.<br>
+  En poursuivant vos recherches, vous tombez sur une autre piste, cette fois sur un réseau social où chacun expose son visage au monde.<br>
+  En inspectant attentivement la photo de profil de la personne, vous remarquez qu’une information discrète, laissée par l’auteur du cliché, pourrait bien être la clé qui vous manquait.<br>
+  Le prénom suivi du nom du photographe, sans espaces, sans caractères spéciaux, sans accents et en minuscules, doit être accolé au préfixe flag- pour valider ce challenge.<br>
+
+  ## Description (english)
+
+  After combing through his code repositories, the mystery of the man with the hat still lingers. You now know who appears in the photo, but the person behind the lens remains unknown.<br>
+  You sense that uncovering the photographer’s identity might finally lead you closer to the truth about the enigmatic stranger.<br>
+  After all, the man with the hat had a film camera around his neck when you met him.<br>
+  Following this lead, you turn to another trail—this time on a social network where people display their faces to the world.<br>
+  By carefully inspecting the profile picture of the person, you notice that a subtle detail left by the photographer could hold the very clue you’ve been searching for.<br>
+  The photographer’s first name followed by their last name, with no spaces, no special characters, no accents, and in lowercase, must be appended to the prefix flag- to solve this challenge.<br>
+
+flags:
+- flag-paullitre
+
+tags:
+- A:Laurent Mercier
+- V:France, Reims
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+
+requirements:
+- "Who is that stranger 2"

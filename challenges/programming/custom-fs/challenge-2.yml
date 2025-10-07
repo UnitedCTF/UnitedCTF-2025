@@ -1,0 +1,50 @@
+name: The Mysteries of Down Under 2
+author: Romain
+category: Programmation
+description: |-
+  ## Description (français)
+
+  Au moment où tu envoies ta réponse au serveur, tu vois un passage secret s'ouvrir
+  devant toi. En entrant, tu découvres une nouvelle pièce avec une affiche indiquant
+  "Méritez-vous vraiment votre récompense ?", accompagnée de l'adresse d'un nouveau
+  serveur et d'un lien vers son code source. Sauras-tu relever ce nouveau défi ?
+
+  Commande pour démarrer le serveur localement :
+
+  ```
+  uv run fastapi run part2.py
+  ```
+
+  ## Description (english)
+
+  Just as you send your response to the server, you see a secret passage open
+  before you. Upon entering, you discover a new room with a poster that reads
+  "Do you truly deserve your reward?", along with the address of a new server
+  and a link to its source code. Will you be able to take on this new challenge?
+
+  Command to start the server locally:
+
+  ```
+  uv run fastapi run part2.py
+  ```
+value: 3
+
+image: ghcr.io/unitedctf/unitedctf2025/custom-fs/part-2:latest
+connection_info: https://mysteries-down-under-2.challenges.unitedctf.ca/
+
+flags:
+- flag-9031f35cd842df12
+
+files:
+- part2-dist.tar.gz
+
+tags:
+- A:Romain
+- V:Australie, Melbourne
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+
+requirements:
+- The Mysteries of Down Under 1
+deploy_parameters:
+  chall_name: mysteries-down-under-2
+playbook_name: static_http

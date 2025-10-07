@@ -1,0 +1,27 @@
+name: Disco Maghreb - Intro
+author: Yxène & YoannSab
+category: Varia
+description: |-
+  ## Description (français)
+
+  Durant votre visite d'Oran en Algérie, vous tombez sur la mythique boutique *Disco Maghreb*, véritable berceau du [Raï](https://fr.wikipedia.org/wiki/Ra%C3%AF) ! Pour promouvoir ce genre musical auprès des nouvelles générations, un serveur MCP permet de consulter en ligne le catalogue de la boutique.<br>
+  Pour ce challenge d'introduction à MCP, n'hésitez pas à utiliser la bibliothèque Python [FastMCP](https://gofastmcp.com/getting-started/welcome).
+
+  ## Description (english)
+  During your visit to Oran, Algeria, you come across the legendary shop Disco Maghreb, the true birthplace of [Raï](https://en.wikipedia.org/wiki/Ra%C3%AF) ! To help promote this musical genre to new generations, an MCP server provides online access to the shop's catalog.<br>
+  For this introductory challenge to MCP, feel free to use the Python library [FastMCP](https://gofastmcp.com/getting-started/welcome).
+value: 2
+
+image: ghcr.io/unitedctf/unitedctf2025/disco-maghreb/part-1:latest
+connection_info: https://disco-maghreb-1.challenges.unitedctf.ca/
+
+flags:
+- flag-MCP_1s_n07_s0_d1ff1cul7-Fn99RLq5
+
+tags:
+- A:Yxène & YoannSab
+- V:Algérie, Oran
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+playbook_name: static_http
+deploy_parameters:
+  chall_name: disco-maghreb-1

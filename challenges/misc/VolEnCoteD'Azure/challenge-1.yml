@@ -1,0 +1,31 @@
+name: Vol en côte d'Azure 1
+author: Seneque
+category: Infonuagique
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 4
+
+description: |-
+  ## Description (français)
+  Vous venez d'atterir en pleine côte d'Azure, pensant vous reposez sur la plage. Cependant, le climat là-bas est tendu, et tout le monde parle d'élections truquées. Vous décidez d'enqêter la dessus, essayant de trouver des fichiers compromettants, avec le peu d'informations que vous avez.
+  Les informations que vous avez sont : 
+  le gouvernement utilise le mots clé monacogovernement pour les élections, et une liste de mots clés pour les élections.
+  
+  ## Description (english)
+  You just landed in the middle of Azure, thinking you're on the beach. However, the weather there is tense, and everyone is talking about rigged elections. You decide to investigate, trying to find compromising files, with the little information you have.
+  The information you have is :
+  the government uses the keyword monacogovernement for the elections, and a list of keywords for the elections.
+
+files:
+- ./election_wordlist.txt
+
+flags:
+- flag-st0r4g3-accounts-are-hard
+
+tags:
+- A:Seneque
+- V:France, Côte d'Azur
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4

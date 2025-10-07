@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/ticketboot:latest
+    ports:
+      - "36969:8080"
+    environment:
+      ticketboot.firstFlag: flag-w3lc0m3_t0_th3_t1ck3t_b00t_e058b670
+      ticketboot.secondFlag: flag-c0ngr4tul4t10ns_h3r3_1s_y0ur_cru1s3_t1ck3t!!_feccc248
+      ticketboot.superSecretPassword: FIRST_CLASS_TICKETS_ca3e24ded9af48c01df28c830f192f95

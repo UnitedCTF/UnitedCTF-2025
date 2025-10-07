@@ -1,0 +1,32 @@
+name: Curse of the Pharaoh 1
+author: Lea1496
+category: Varia
+
+type: standard
+
+# https://res260.github.io/cfss/
+#CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 2
+
+description: |-
+  ## Description (français)
+
+  C'est un départ pour l'Égypte, tu t'étais mis en tête d'aller visiter les pyramides, mais dès que tu t'es approché de la première des caractères étranges sont apparus sur ta peau, je me demande ce qu'ils signifient...
+
+  ## Description (english)
+
+  It's off to Egypt! You had your heart set on visiting the pyramids, but as soon as you approached the first one, strange characters appeared on your skin. I wonder what they mean...
+
+files:
+- CurseOfThePharaoh.zip
+
+flags:
+- flag-N1C3_t477s_BR0
+
+hints:
+- Je me demande s'il y a une façon de regarder les textures de plus près... / I wonder if there's a way to take a closer look at the textures...
+
+tags:
+- A:Lea1496
+- V:Égypte, Gizeh
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4

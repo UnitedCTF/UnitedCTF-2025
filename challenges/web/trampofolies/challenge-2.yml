@@ -1,0 +1,49 @@
+name: Les trampofolies 2
+author: Linkster78
+category: Web
+
+type: ansible
+
+image: ghcr.io/unitedctf/unitedctf2025/trampofolies:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: trampofolies
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:M/HSFC:N=6-10
+value: 8
+
+description: |-
+  ## Description (français)
+  Lors de votre périple à Regina, vous rencontrez une petite bande très enthousiaste d'amateurs de trampolines.
+
+  Bien qu'ils soient généralement heureux, récemment, rien ne va plus. Un groupe de trolls anti-trampolines a défacé leur wiki, désactivé les contributions, installé une porte dérobée et retiré les accès de l'administrateur.
+
+  Votre deuxième et dernière tâche est de reprendre le contrôle du serveur.
+
+  - Le serveur est identique à celui du défi précédent.
+  - Vous devez appeler l'exécutable /printflag2 pour obtenir le flag.
+
+  ## Description (english)
+  During your trip in Regina, you meet a small group of very enthusiastic trampoline amateurs.
+
+  While they're typically very happy, recently, everything has gone downhill. A group of anti-trampoline trolls has defaced their wiki, deactivated contributions, installed a backdoor and removed the administrator's access.
+
+  Your second and last task is to regain control of the server.
+
+  - The server is identical to the one seen in the first challenge.
+  - You must call the executable /printflag2 to obtain the flag.
+
+requirements:
+- "Les trampofolies 1"
+
+flags:
+- flag-82853a62299d08bd
+
+files:
+- server/rest.php.diff
+
+tags:
+- A:Linkster78
+- V:Canada, Regina
+- CFSS:0.3/TS:I/E:M/HSFC:N=6-10

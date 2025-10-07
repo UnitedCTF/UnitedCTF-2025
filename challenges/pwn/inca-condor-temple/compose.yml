@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: server
+    image: ghcr.io/unitedctf/unitedctf2025/inca-condor-temple:latest
+    ports:
+    - 1000:1000

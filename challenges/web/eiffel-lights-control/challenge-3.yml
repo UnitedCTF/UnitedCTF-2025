@@ -1,0 +1,42 @@
+name: Eiffel Lights Control System 3
+author: Wills
+category: Web
+
+image: ghcr.io/unitedctf/unitedctf2025/eiffel-lights-control:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: eiffel-lights-control
+
+type: ansible
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:L/HSFC:N=4-7
+value: 5
+
+description: |-
+  ## Description (français)
+  Tu as enfin réussi à accéder au panneau de contrôle des lumières de la tour Eiffel.
+
+  Cependant, un dernier obstacle persiste : le système vérifie qu'il est minuit avant d'autoriser
+  l'allumage… mais l'horloge interne de la tour semble défectueuse.
+
+  ## Description (english)
+  You've finally gained access to the Eiffel Tower's lighting control panel.
+
+  However, one last obstacle remains: the system only activates the lights at midnight… and the tower's
+  internal clock seems to be broken.
+
+
+flags:
+  - flag-s0us_l3_c13l_d3_p4r1s_l3s_lum13r3s_br1ll3nt_f4d1193e
+
+files:
+- app.py
+
+requirements:
+  - "Eiffel Lights Control System 2"
+
+tags:
+  - A:Wills
+  - V:France, Paris
+  - CFSS:0.3/TS:I/E:L/HSFC:N=4-7

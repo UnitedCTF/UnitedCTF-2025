@@ -1,0 +1,47 @@
+name: Aux 45 tours
+author: Linkster78
+category: Web
+
+image: ghcr.io/unitedctf/unitedctf2025/aux-45-tours:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: aux-45-tours
+
+type: ansible
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:M/HSFC:N=6-10
+value: 7
+
+description: |-
+  ## Description (français)
+
+  Au sein de Nashville, la cité de la musique, se trouve le fameux magasin "Aux 45 tours".
+
+  Dès votre entrée, vous êtes sous le choc. Tous les murs sans exception sont garnis de vinyles de tout genres.
+
+  Un employé constatant votre arrivée vous accoste et vous parle de l'histoire du magasin. Il conclue en vous précisant que depuis peu, le commerce offre un service pour épurer de la musique.
+
+  **Le flag est sur le serveur dans le fichier `/flag.txt`.**
+
+  ## Description (english)
+
+  At the heart of Nashville, the music city, resides the famous store "Aux 45 tours".
+
+  As soon as you enter, your jaw drops. Every single wall is filled with vinyls of all sorts.
+
+  An employee notices your entrance and comes to talk to you about the history of the store. He concludes by explaining that recently, the store has started offering a service to purify music.
+
+  **The flag is on the server at the path `/flag.txt`.**
+
+flags:
+- flag-M3rc1Fabr1c3B3ll4rd0f8b2e15
+
+# regenerate with `make dist`
+files:
+- server-dist.tar.gz
+
+tags:
+- A:Linkster78
+- V:États-Unis, Nashville
+- CFSS:0.3/TS:I/E:M/HSFC:N=6-10

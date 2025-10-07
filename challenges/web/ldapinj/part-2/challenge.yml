@@ -1,0 +1,67 @@
+name: Les animaux de Cloridorme
+author: Ch0ufleur
+category: Web
+description: |-
+  ## Description (français)
+
+  Tu as réussi à rencontrer ton ami John Doe! Mais il n'était pas très content que tu récoltes ainsi ses données personnelles. Il a averti les ingénieurs informatiques de Cloridorme, de très efficaces individus. Ils ont corrigé le problème!
+
+  Ils sont même prêts à te donner le code qu'ils ont déployé.
+
+  Bonus! On peut maintenant chercher des animaux de compagnie. N'est-ce pas mignon? 🦔 Les nouveaux administrateurs en sont fan, ils ont même changé le nom de leur compte pour ressembler à un animal!  Ne t'inquiète pas, ce sont encore des personnes humaines.
+
+  ## Description (english)
+
+  You've managed to meet your friend John Doe! But he wasn't too happy about you collecting his personal data. He alerted Cloridorme's computer engineers, who are very efficient individuals. They fixed the problem!
+
+  They're even willing to give you the code they deployed.
+
+  Bonus! You can now search for pets. Isn't that cute? 🦔 The new administrators are fans, and have even changed the name of their account to resemble an animal! Don't worry, they are still human persons.
+value: 2
+
+image: ghcr.io/unitedctf/unitedctf2025/ldapinj/part-2/ldap:latest
+connection_info: https://cloridorme-2.challenges.unitedctf.ca/
+
+flags:
+- flag-ar3nt_th3y_cut3z_1acca02ed
+
+files:
+- api/app.py
+
+tags:
+- A:Ch0ufleur
+- V:Québec, Cloridorme
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+
+requirements:
+- Ami cloridormien discret
+playbook_name: custom_compose
+deploy_parameters:
+  chall_name: cloridorme-2
+  compose_definition:
+    services:
+      ldap:
+        image: ghcr.io/unitedctf/unitedctf2025/ldapinj/part-2/ldap:latest
+        environment:
+          LDAP_ORGANISATION: Ville de Cloridorme
+          LDAP_DOMAIN: cloridorme.unitedctf
+          LDAP_ADMIN_PASSWORD: aimes-tu-les-animaux
+          LDAP_TLS: 'false'
+      api:
+        image: ghcr.io/unitedctf/unitedctf2025/ldapinj/part-2/api:latest
+        depends_on:
+        - ldap
+      nginx:
+        image: ghcr.io/unitedctf/unitedctf2025/ldapinj/part-2/frontend:latest
+        labels:
+        - traefik.enable=true
+        - >-
+          traefik.http.routers.site_ldapinj-part2.rule=Host(`cloridorme-2.challenges.unitedctf.ca`)
+        networks:
+        - traefik
+        - default
+        depends_on:
+        - api
+    networks:
+      traefik:
+        external: true

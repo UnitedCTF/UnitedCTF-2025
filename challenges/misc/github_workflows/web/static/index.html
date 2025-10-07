@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background: #f5f7fa;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: #fff;
+            padding: 2rem 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            min-width: 320px;
+        }
+        h2 {
+            margin-bottom: 1.5rem;
+            color: #333;
+            font-weight: 600;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-size: 1rem;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            margin-bottom: 1.25rem;
+            transition: border-color 0.2s;
+        }
+        input[type="text"]:focus {
+            border-color: #6366f1;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 0.75rem;
+            background: linear-gradient(90deg, #6366f1 0%, #60a5fa 100%);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:hover {
+            background: linear-gradient(90deg, #60a5fa 0%, #6366f1 100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Create Repo Challenge for User</h2>
+        <form id="userForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter GitHub username">
+            <button type="submit">Create</button>
+        </form>
+        <div id="result" style="margin-top:1rem;"></div>
+        <script>
+            document.getElementById('userForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const username = document.getElementById('username').value;
+                const resultDiv = document.getElementById('result');
+                resultDiv.textContent = 'Processing...';
+
+                const response = await fetch('/create', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: `username=${encodeURIComponent(username)}`
+                });
+
+                const data = await response.json();
+                if (response.ok) {
+                    resultDiv.innerHTML = `Returned URL: <a href="${data.url}" target="_blank">${data.url}</a>`;
+                } else {
+                    resultDiv.textContent = data.error || 'An error occurred.';
+                }
+            });
+        </script>
+    </div>
+</body>
+</html>

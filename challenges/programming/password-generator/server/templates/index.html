@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password manager</title>
+<style>
+    body {
+      font-family: 'Courier New', monospace;
+      background-color: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 50px;
+      color: #333;
+    }
+
+    section {
+      background-color: #fff;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 750px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin: 15px 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0 0;
+      counter-reset: step 0;
+      display: flex;
+      flex-direction: column-reverse;
+      font-size: 0.8em;
+    }
+
+    li {
+      padding: 4px 0;
+      font-size: 0.95em;
+      position: relative;
+      padding-left: 20px;
+      color: #ccc;
+      counter-increment: step;
+    }
+
+    li::before {
+      content: counter(step) " ";
+    }
+
+    li:last-child {
+      color: #333;
+    }
+
+    dialog {
+      width: 80% !important;
+      max-width: 650px !important;
+    }
+</style>
+</head>
+<body>
+  <section>
+    <h2>PASSWORD MANAGER</h2>
+    <input type="text" placeholder="Password">
+    <input type="button" value="Validate">
+    <ul>
+     
+    </ul>
+  </section>
+</body>
+
+<script type="module">
+  const input = document.querySelector('input[type="text"]');
+  const ul = document.querySelector('ul');
+  const button = document.querySelector('input[type="button"]');
+
+  const send = async (password) => {
+    const response = await fetch('/password', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ password })
+    });
+    const data = await response.json();
+    ul.innerHTML = data.messages.map(step => `<li>${step}</li>`).join('');
+
+    if (data.alert && data.alert.length > 0)
+      alert(data.alert.join('\n'));
+  };
+
+  button.addEventListener('click', () => {
+    const password = input.value.trim();
+    if (password) {
+      send(password);
+      input.focus();
+    }
+  });
+
+  await send();
+</script>
+</html>

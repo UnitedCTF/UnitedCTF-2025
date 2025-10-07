@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="canvas">
+    <div class="non_ground">
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tower">
+            <div class="base">
+                <div class="base_side left"></div>
+                <div class="base_side right"></div>
+                <div class="base_arc"></div>
+            </div>
+            <div class="lower_post"></div>
+            <div class="middle">
+                <div class="middle_side left"></div>
+                <div class="middle_side right"></div>
+            </div>
+            <div class="higher_post"></div>
+            <div class="top">
+                <div class="top_side"></div>
+            </div>
+            <div class="peak">
+                <div class="peak_lower"></div>
+                <div class="peak_middle"></div>
+                <div class="peak_top"></div>
+            </div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+    </div>
+
+    <div class="ground">
+    </div>
+    <div class="cloud"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+</div>
+
+<div class="topnav">
+    {% if session.get('username') == 'admin' %}
+        <a href="/admin">Admin panel</a>
+    {% endif %}
+    <a href="/logout">Logout</a>
+</div>
+{% if flag %}
+    <div class="announcement">Welcome <strong>{{ session.get('username') }}</strong>! 🎉 {{ flag }}</div>
+{% endif %}
+
+<form method="post" action="/lights">
+    <h3>Eiffel Lights Control System Status</h3>
+
+    <label class="radio">
+        <input type="radio" id="1" name="id" value="1" checked/>
+        <span>Top lights</span>
+    </label>
+    <label class="radio">
+        <input type="radio" id="2" name="id" value="2"/>
+        <span>Middle lights</span>
+    </label>
+    <label class="radio">
+        <input type="radio" id="3" name="id" value="3"/>
+        <span>Bottom lights</span>
+    </label>
+
+    {% if light_status is not none %}
+        <div class="message">Selected light is: <strong>{{ "ON" if light_status else "OFF" }}</strong></div>
+    {% endif %}
+
+    {% if error %}
+        <div class="message">{{ error }}</div>
+    {% endif %}
+
+    <button>Get status</button>
+
+</form>
+</body>
+</html>

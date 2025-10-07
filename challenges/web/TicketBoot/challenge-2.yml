@@ -1,0 +1,36 @@
+name: United Cruiselines 2
+author: Wills
+category: Web
+
+image: ghcr.io/unitedctf/unitedctf2025/ticketboot:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: united-cruiselines
+
+type: ansible
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 3
+
+description: |-
+  ## Description (français)
+  Tu veux réserver ta croisière à la billeterie de United Cruiselines, mais un encart indique qu'un code promotionnel est requis pour compléter l'achat.
+
+  Malheureusement, aucun code ne t'a été fourni. Peut-être qu'un code promo traine quelque part dans le système de billeterie...
+
+  ## Description (english)
+  You're trying to book your cruise at the United Cruiselines ticket booth, but a notice says a promotional code is required to complete the purchase.
+
+  Unfortunately, no code was provided. Maybe a promo code has been left somewhere in the ticketing system...
+
+flags:
+  - flag-c0ngr4tul4t10ns_h3r3_1s_y0ur_cru1s3_t1ck3t!!_feccc248
+
+requirements:
+  - "United Cruiselines 1"
+
+tags:
+  - A:Wills
+  - V:Grèce, Athènes
+  - CFSS:0.3/TS:L/E:L/HSFC:N=1-2

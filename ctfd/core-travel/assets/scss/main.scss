@@ -1,0 +1,130 @@
+@use "bootstrap/scss/bootstrap" as * with (
+  $info: #5c728f
+);
+
+@use "includes/components/table";
+@use "includes/components/jumbotron";
+@use "includes/components/challenge";
+@use "includes/components/index";
+@use "includes/components/sticky-footer";
+@use "includes/components/graphs";
+
+@use "includes/utils/fonts";
+@use "includes/utils/opacity";
+@use "includes/utils/min-height";
+@use "includes/utils/cursors";
+@use "includes/utils/lolight";
+
+@use "includes/icons/award-icons";
+@use "includes/icons/flag-icons";
+
+:root {
+  --bg-color: #F7F4E4;
+  --grid-color: rgba(139, 156, 82, 0.1);
+  --text-primary: #2c3e50;
+  --text-secondary: #5a6c7d;
+  // --text-highlight: #8B9C52;
+  // --accent-primary: #8B9C52;
+  --text-highlight: #FFB563;
+  --accent-primary: #FFB563;
+  --accent-secondary: #9BC4EB;
+  --accent-tertiary: #9BC4EB;
+  --panel-bg: rgba(240, 251, 252, 0.8);
+  // --panel-border: rgba(139, 156, 82, 0.3);
+  --panel-border: rgba(255, 181, 99, 0.3);
+  --panel-highlight: rgba(255, 255, 255, 0.2);
+  --card-bg: rgba(240, 251, 252, 0.9);
+  --card-border: rgba(139, 156, 82, 0.2);
+  --shadow: rgba(0, 0, 0, 0.05);
+
+  --container-width: 1100px;
+  --container-padding: 1rem;
+
+  --h: 120px;
+  --w: 300px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+
+ body {
+  color: var(--text-primary);
+  font-family: "Courier New";
+  height: 100vh;
+  font-size: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1,
+h2 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+blockquote {
+  border-left: 4px solid $secondary;
+  padding-left: 15px;
+}
+
+input,
+select {
+  padding: 0.6rem !important;
+  height: auto !important;
+}
+
+main { height: 100%; }
+
+.fa-spin.spinner {
+  text-align: center;
+  opacity: 0.5;
+}
+
+.badge-notification {
+  vertical-align: top;
+  margin-left: -1.5em;
+  font-size: 50%;
+}
+
+.form-select {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e");
+  background-size: 8px 10px;
+}
+
+#three-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  cursor: grab;
+}
+
+
+#challenge, .modal-content {
+  font-size: 12px !important;
+
+  h2 {
+    font-size: 1.5rem !important;
+  }
+
+  h3 {
+    font-size: 1.2rem !important;
+  }
+
+
+}
+
+

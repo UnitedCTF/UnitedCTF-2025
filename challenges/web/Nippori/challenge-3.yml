@@ -1,0 +1,30 @@
+name: Nippori 3
+author: Otaphoque
+category: Web
+description: |-
+  ## Description (français)
+
+  Pendant votre tour du monde, vous profitez de votre visite au Japon pour découvrir le monde merveilleux du textile... Ah, toutes ces soieries toutes plus soyeuses les unes que les autres, ces cotons imprimés aux couleurs vibrantes et aux motifs géométriques si caractéristiques du pays du soleil levant, et ce lin plus naturel que la nature elle-même ! Bref, vous ne savez pas par où commencer. Heureusement que ce site existe pour vous aiguiller dans votre aventure textile !
+
+  Attendez... le Japon est aussi le pays de la technologie ! Il est possible que vous y trouviez quelques robots au milieu de tous ces tissus !
+
+  ## Description (english)
+
+  During your trip around the world, you take advantage of your visit to Japan to discover the wonderful world of textiles... Ah, all these silks more silky than each other, these printed cottons with vibrant colors and geometric patterns so characteristic of the land of the rising sun, and this linen more natural than nature itself! In short, you don't know where to start. Fortunately, this website exists to guide you in your textile adventure!
+
+  Wait... Japan is also the land of technology! It is possible that you will find some robots in the middle of all these fabrics!
+value: 1
+
+image: ghcr.io/unitedctf/unitedctf2025/nippori:latest
+connection_info: https://nippori.challenges.unitedctf.ca/
+
+flags:
+- flag-333_40b5b161a9ea4bf2bfff1eaeccfd6499
+
+tags:
+- A:Otaphoque
+- V:Japon, Nippori
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+deploy_parameters:
+  chall_name: nippori
+playbook_name: static_http

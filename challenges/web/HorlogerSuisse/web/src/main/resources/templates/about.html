@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - Horloger Suisse</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .luxury-text { color: #d4af37; font-family: serif; }
+        body { padding-top: 76px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand luxury-text" href="/">
+                <i class="fas fa-clock"></i> Horloger Suisse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/collection">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h1 class="text-center luxury-text mb-5">
+                    <i class="fas fa-history"></i> Notre Histoire
+                </h1>
+                
+                <div class="card shadow mb-5">
+                    <div class="card-body p-5">
+                        <h2 class="luxury-text">Depuis 1847</h2>
+                        <p class="lead">
+                            Fondée au cœur de Genève en 1847, la Maison Horloger Suisse perpétue depuis plus 
+                            de 175 ans l'art ancestral de l'horlogerie suisse de prestige.
+                        </p>
+                        
+                        <p>
+                            Notre atelier, situé dans le quartier historique des horlogers genevois, 
+                            abrite les secrets d'un savoir-faire transmis de maître à apprenti à travers 
+                            six générations d'artisans passionnés.
+                        </p>
+                        
+                        <h3 class="luxury-text mt-4">Excellence Technique</h3>
+                        <p>
+                            Chaque garde-temps qui sort de nos ateliers est le fruit d'un travail minutieux 
+                            alliant tradition séculaire et innovations techniques de pointe. Nos horlogers-restaurateurs 
+                            maîtrisent l'art délicat des complications mécaniques les plus sophistiquées.
+                        </p>
+                        
+                        <h3 class="luxury-text mt-4">Reconnaissance Internationale</h3>
+                        <ul>
+                            <li>Lauréat du Prix d'Excellence Horlogère de Genève (2019, 2021, 2023)</li>
+                            <li>Membre de la Fondation de la Haute Horlogerie</li>
+                            <li>Certification Swiss Made depuis 1920</li>
+                            <li>Fournisseur officiel de plusieurs maisons royales européennes</li>
+                        </ul>
+                        
+                        <h3 class="luxury-text mt-4">Engagement Environnemental</h3>
+                        <p>
+                            Soucieux de préserver notre environnement exceptionnel, nous nous engageons 
+                            dans une démarche de développement durable en utilisant exclusivement des 
+                            matériaux précieux provenant de sources responsables et certifiées.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card border-0 text-center">
+                            <div class="card-body">
+                                <i class="fas fa-users fa-3x luxury-text mb-3"></i>
+                                <h4>Notre Équipe</h4>
+                                <p>15 maîtres horlogers diplômés de l'École d'Horlogerie de Genève</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-0 text-center">
+                            <div class="card-body">
+                                <i class="fas fa-tools fa-3x luxury-text mb-3"></i>
+                                <h4>Savoir-Faire</h4>
+                                <p>Plus de 200 opérations manuelles pour chaque garde-temps</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Horloger Suisse. Tous droits réservés. | Swiss Made Excellence</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

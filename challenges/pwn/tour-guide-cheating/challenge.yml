@@ -1,0 +1,39 @@
+name: Czech your pointers
+author: Malori
+category: PWN
+description: |-
+  ## Description (français)
+
+  J'ai entendu dire qu'on pouvait gagner des prix simplement en répondant aux questions du guide touristique.
+
+  ... J'étais pas prêt(e) du tout pour ces questions... Elles sont beaucoup trop difficiles!
+
+  Ne trouvez vous pas le guide touristique un peu trop curieux?
+
+  ## Description (english)
+
+  I heard we could win awesome prizes by answering question from our tour guide!
+
+  ... I wasn't ready for those questions, they are waaay to difficult for me!
+
+  Don't you think the tour guide is little bit too curious?
+value: 3
+
+image: ghcr.io/unitedctf/unitedctf2025/tour-guide:latest
+connection_info: tcp://challenges.unitedctf.ca:32775/
+
+flags:
+- flag-us3_@fter_fr33_IsLiKer3T3llIngyOurFri3ndsJok3sL0ud3ry
+
+files:
+- src/main.c
+
+tags:
+- A:Malori
+- V:République tchèque, Prague
+- CFSS:0.3/TS:B/E:L/HSFC:Y=3-6
+playbook_name: tcp
+deploy_parameters:
+  chall_name: tour-guide
+  published_ports:
+  - 1337

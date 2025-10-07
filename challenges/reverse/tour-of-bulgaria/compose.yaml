@@ -1,0 +1,33 @@
+services:
+  level1:
+    build:
+      context: .
+      dockerfile: level1/Dockerfile
+    image: ghcr.io/unitedctf/unitedctf2025/tour-of-bulgaria/part-1:latest
+    ports:
+      - "1437:1437"
+
+  level2:
+    build:
+      context: .
+      dockerfile: level2/Dockerfile
+    image: ghcr.io/unitedctf/unitedctf2025/tour-of-bulgaria/part-2:latest
+    ports:
+      - "1438:1438"
+
+  level3:
+    build:
+      context: .
+      dockerfile: level3/Dockerfile
+    image: ghcr.io/unitedctf/unitedctf2025/tour-of-bulgaria/part-3:latest
+    ports:
+      - "1439:1439"
+
+  level4:
+    build:
+      context: .
+      dockerfile: level4/Dockerfile
+    image: ghcr.io/unitedctf/unitedctf2025/tour-of-bulgaria/part-4:latest
+    ports:
+      - "1440:1440"
+      - "5000:5000"

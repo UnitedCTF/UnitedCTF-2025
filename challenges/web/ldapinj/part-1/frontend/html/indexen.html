@@ -1,0 +1,274 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Faustina:ital,wght@0,300..800;1,300..800&family=Mirza:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            background-color: bisque;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: "Faustina", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        .search {
+            border: solid 5px green;
+            background-color: rgba(216, 255, 118, 0.9);
+            border-radius: 8px;
+            height: 5vh;
+            font-size: 20;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        button {
+            font-family: "Faustina", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+        .welcome {
+            font-size: 5vh;
+            width: 50vw;
+            text-align: center;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            row-gap: 3em;
+        }
+
+        #sectionform {
+            background-color: green;
+        }
+
+        .form-container {
+            background-color: rgba(242, 255, 210, 0.589);
+            border-radius: 20px;
+            display: flex;
+            align-items: start;
+            row-gap: 1rem;
+            justify-content: center;
+            flex-direction: column;
+            max-width: 25rem;
+        }
+
+        input {
+            min-width: 15rem;
+            font-family: "Faustina", serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+            color: green;
+            font-size: 3vh;
+            padding: 1vh;
+        }
+
+        p {
+            font-size: 2vh;
+            background-color: rgba(216, 255, 118, 0.9);
+            margin: 0;
+            padding: 0.75rem;
+            border-radius: 1em;
+            overflow-x: wrap;
+        }
+
+        .result {
+            margin-top: 3rem;
+            width: 100%;
+            background-color: white;
+            border-radius: 14px;
+            padding: 1.15rem;
+            font-size: 2.5vh;
+        }
+
+        @media only screen and (min-width: 1040px) {
+            .form-row {
+                flex-direction: row;
+                gap: 5rem;
+            }
+            .form-container {
+                padding: 3rem;
+                height: 20rem;
+            }
+        }
+        @media only screen and (max-width: 1039px) {
+            .form-row {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .form-container {
+                padding: 1rem;
+                min-width: 100%;
+            }
+        }
+        .form-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tile {
+            width: 50px;
+            height: 50px;
+            background-image: url('data:image/png;base64,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');
+            background-size: cover;
+            margin-left: 70vw;
+        }
+
+        .shine:hover {
+            text-shadow: rgb(119, 255, 0) 1px 0 10px;;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="mosaic" id="mosaic"></div>
+    <button style="display: block; position:absolute; top:50;left:50;z-index:20;" onclick="window.location.href = 'index.html'">Français</button>
+    <div style="display: block; position:absolute; top:0;left:0;"><a style="color:rgb(255, 214, 164) !important;"
+            href="https://www.flaticon.com/fr/icones-gratuites/contact" title="contact icônes">Contact icônes créées par
+            Freepik - Flaticon</a></div>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <section>
+                <div class="welcome">Welcome to Cloridorme's brand-new online phone directory!</div>
+                <a class="welcome shine" style="color:green; text-decoration: underline;"
+                    onclick="gsap.to(window, { duration: 2, scrollTo: { y: '#sectionform', offsetY: 0 } });">What is it?</a>
+                <img src="https://media1.tenor.com/m/IWy9hfqlYmQAAAAC/event.gif" width="20%" alt="kermit the frog is talking on a phone">
+            </section>
+            <section id="sectionform">
+                <div class="form-row">
+                    <div class="form-container">
+                        <p>Easy to use!</p>
+                        <p>Just enter the person's surname!</p>
+                        <p>Our top notch database will return the exact phone number of the one you seek!</p>
+                        <p>And MORE!</p>
+                    </div>
+                    <div class="form-container">
+                        <input id="searchInput" placeholder="Surname">
+                        <div>
+                            <button id="search" class="search" onclick="search()">Search it!</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="result"></div>
+            </section>
+        </div>
+    </div>
+    <!-- gsap and plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollSmoother.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
+
+    <script>
+        const mosaic = document.getElementById("mosaic");
+        const rows = 10;
+        const cols = 10;
+
+        for (let r = 0; r < rows; r++) {
+            for (let c = 0; c < cols; c++) {
+                const tile = document.createElement("div");
+                tile.classList.add("tile");
+                tile.dataset.row = r;
+                mosaic.appendChild(tile);
+            }
+        }
+
+
+        function search() {
+            const currentUrl = window.location.origin;
+            const inputValue = document.getElementById('searchInput').value;
+
+            fetch(currentUrl + '/api/search?lo=sn%3D' + inputValue.replace(/[^a-z0-9]/gi, '')+ '&ro=o%3Dvisible')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                }).then(data => {
+                    const resultDiv = document.getElementById('result');
+                    resultDiv.innerHTML = ''; // clear previous content
+
+                    if (data.length === 0) {
+                        resultDiv.textContent = "No user found.";
+                        return;
+                    }
+
+                    const list = document.createElement('ul');
+                    for (const user of data) {
+                        const attrs = user.attributes;
+                        const name = attrs.cn || "Unknown";
+                        const mobile = (attrs.mobile || attrs.mymobile) || "Unknown";
+
+                        const li = document.createElement('li');
+                        li.textContent = `${name} — ${mobile}`;
+                        list.appendChild(li);
+                    }
+
+                    resultDiv.appendChild(list);
+                }).catch(error => {
+                    console.error('Fetch error:', error);
+                });
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, SplitText, ScrollSmoother)
+
+            ScrollSmoother.create({
+                smooth: 1,
+                effects: true,
+                normalizeScroll: true
+            });
+            SplitText.create(".welcome", {
+                type: "chars, words",
+                mask: "lines",
+                autoSplit: true,
+                onSplit(self) {
+                    return gsap.from(self.words, {
+                        x: 150,
+                        opacity: 0,
+                        duration: 1.2,
+                        ease: "power4",
+                        stagger: 0.04
+                    });
+                }
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

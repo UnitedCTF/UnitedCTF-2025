@@ -1,0 +1,617 @@
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #080710;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+            #1845ad,
+            #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+            to right,
+            #ff512f,
+            #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.40);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(2px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    z-index: 1000
+}
+.night form {
+    background-color: rgba(0, 0, 0, 0.65) !important; 
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="password"]{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+}
+::placeholder{
+    color: #e5e5e5;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f3f3f3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: green;
+    --text-color: color-mix(#000, var(--primary-color), 64%);
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: var(--text-color);
+    font-size: calc(1em + 1.25vw);
+    background-color: color-mix(#fff, var(--primary-color), 90%);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    cursor: pointer;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 0.375em;
+
+    input {
+        position: absolute;
+        left: -9999px;
+        &:checked + span {
+            background-color: color-mix(#fff, var(--primary-color), 84%);
+            &:before {
+                box-shadow: inset 0 0 0 0.4375em var(--primary-color);
+            }
+        }
+    }
+    span {
+        display: flex;
+        align-items: center;
+        padding: 0.375em 0.75em 0.375em 0.375em;
+        border-radius: 99em;
+    transition: 0.25s ease;
+        &:hover {
+            background-color: color-mix(#fff, var(--primary-color), 84%);
+        }
+        &:before {
+            display: flex;
+            flex-shrink: 0;
+            content: "";
+            background-color: #fff;
+            width: 1.5em;
+            height: 1.5em;
+            border-radius: 50%;
+            margin-right: 0.375em;
+            transition: 0.25s ease;
+            box-shadow: inset 0 0 0 0.125em var(--primary-color);
+        }
+    }
+}
+
+.message {
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.topnav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.40);
+    backdrop-filter: blur(2px);
+    margin: 5px;
+    border-radius: 10px;
+    z-index: 10000;
+}
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.topnav a:hover {
+  background-color: rgba(0, 0, 0, 0.30);
+}
+
+.announcement {
+    position: absolute;
+    text-align: center;
+    top: 30px;
+    color:#000;
+    z-index: 9999;
+}
+.night .announcement {
+    color: #fff !important;
+}
+
+/* EIFFEL TOWER */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    background: #68e3ff;
+}
+
+.night {
+    background: #051d22 !important;
+}
+
+.canvas {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.ground {
+    background: #d2d2d2;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 240px;
+    z-index: 1;
+}
+
+.ground:before, .ground:after {
+    background: green;
+    flex: 1;
+    content: "";
+    border-radius: 0 0 100px 0 / 0 0 100px 0;
+}
+
+.ground:after {
+    transform: scale(-1, 1);
+}
+
+.non_ground {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    column-gap: 20px;
+    z-index: 2;
+}
+
+.tower {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 400px;
+    height: 100%;
+    /*border: 1px solid black;*/
+    --color: #ebf5ff;
+    --color_dark: #ffffff;
+}
+
+.base, .middle, .top {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    position: relative;
+}
+
+.base {
+    column-gap: 180px;
+    position: relative;
+    z-index: 0;
+}
+
+.base_side {
+    width: 60px;
+    height: 140px;
+    border: 7px solid var(--color_dark);
+    border-top: 0;
+    --offset1: 5px;
+    --offset2: 32px;
+    --skew_offset: 24deg;
+    /*background: var(--color);*/
+    background: repeating-linear-gradient(45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    repeating-linear-gradient(-45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    linear-gradient(90deg, transparent 44%, var(--color) 44%, var(--color) 56%, transparent 56%),
+    repeating-linear-gradient(180deg, var(--color) 0px, var(--color) calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset2) / 1.41421356237));
+    background-position: 0, 0, 0, 0px -6px;
+    transform: skewX(calc(0deg - var(--skew_offset)));
+    /*filter: drop-shadow(1px 1px 5px black);*/
+}
+
+.base_side.right {
+    transform: skewX(var(--skew_offset));
+}
+
+.lower_post {
+    width: 237px;
+    height: 50px;
+    /*background: var(--color);*/
+    transform-origin: 50% 100%;
+    transform: perspective(100px) rotateX(15deg);
+    border: 6px solid var(--color_dark);
+    top: -2px;
+    --offset1: 7px;
+    --offset2: 29px;
+    --skew_offset: 24deg;
+    background: repeating-linear-gradient(45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    repeating-linear-gradient(-45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    repeating-linear-gradient(90deg, var(--color) 0px, var(--color) calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset2) / 1.41421356237)),
+    repeating-linear-gradient(180deg, var(--color) 0px, var(--color) calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset2) / 1.41421356237));
+    background-position: 0, 0, -12px -4px, 0px 0px;
+
+}
+
+
+.base_arc {
+    position: absolute;
+    align-self: flex-end;
+    width: 260px;
+    aspect-ratio: 1/1;
+    /*border: 15px solid #CFA678;*/
+    background: radial-gradient(transparent 62%, var(--color_dark) 62%, var(--color_dark) 64%, var(--color) 64%, var(--color) 69%, var(--color_dark) 69%);
+    transform: translateY(50%);
+    clip-path: polygon(25% 0%, 75% 0%, 92% 40%, 8% 40%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.middle {
+    position: relative;
+    column-gap: 74px;
+    z-index: 0;
+}
+
+.middle:before, .middle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 210px;
+    height: 5px;
+    background: var(--color);
+    border: 5px solid var(--color_dark);
+    z-index: -1;
+    bottom: 0;
+    transform: translateY(100%);
+    border-radius: 10px;
+}
+
+.middle:after {
+    bottom: 20px;
+    z-index: 2;
+}
+
+.middle_side {
+    width: 50px;
+    height: 100px;
+    --offset1: 5px;
+    --offset2: 33px;
+    --skew_offset: 24deg;
+    background: repeating-linear-gradient(45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    repeating-linear-gradient(-45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    repeating-linear-gradient(180deg, var(--color) 0px, var(--color) calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset2) / 1.41421356237)),
+    linear-gradient(90deg, transparent 42%, var(--color) 42%, var(--color) 58%, transparent 58%);
+    background-position: 0, 0, 0 -3px;
+    border: 6px solid var(--color_dark);
+    border-bottom: 0;
+    border-top: 0;
+    transform: skewX(-12deg);
+}
+
+.middle_side.right {
+    transform: skewX(12deg);
+}
+
+.higher_post {
+    width: 160px;
+    height: 40px;
+    background: var(--color);
+    transform-origin: 50% 100%;
+    transform: perspective(100px) rotateX(10deg);
+    border: 6px solid var(--color_dark);
+    top: -2px;
+    --offset1: 5px;
+    --offset2: 16px;
+    --skew_offset: 24deg;
+    background: repeating-linear-gradient(45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    repeating-linear-gradient(-45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2));
+    background-position: 0, 0, 0;
+}
+
+.top {
+    column-gap: 0px;
+    filter: drop-shadow(5px 0px var(--color_dark)) drop-shadow(-5px 0px var(--color_dark));
+}
+
+.top:before, .top:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 5px;
+    background: var(--color);
+    border: solid var(--color_dark);
+    border-width: 5px 0px;
+    z-index: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    border-radius: 10px;
+}
+
+.top:after {
+    bottom: 20px;
+}
+
+.top_side {
+    width: 120px;
+    height: 280px;
+    background: #68e3ff;
+    border-bottom: 0;
+    border-top: 0;
+    transform: skewX(calc(0deg - var(--skew_offset)));
+    clip-path: polygon(35% 0%, 65% 0%, 100% 100%, 70% 100%, 50% 35%, 30% 100%, 0% 100%);
+    display: flex;
+}
+
+.night .top_side {
+    background: #051d22 !important;
+}
+
+.top_side:before, .top_side:after {
+    flex: 1;
+    --offset1: 5px;
+    --offset2: 33px;
+    --skew_offset: 24deg;
+    /*background: red;*/
+    background: repeating-linear-gradient(45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    repeating-linear-gradient(-45deg, var(--color) 0px, var(--color) var(--offset1), transparent var(--offset1), transparent var(--offset2)),
+    repeating-linear-gradient(180deg, var(--color) 0px, var(--color) calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset1) / 1.41421356237), transparent calc(var(--offset2) / 1.41421356237)),
+    linear-gradient(90deg, transparent 45%, var(--color) 45%, var(--color) 55%, transparent 55%);
+    background-position: 0, 0, 0;
+    content: "";
+    display: block;
+    transform: skewX(-8deg) translateX(7px);
+    clip-path: polygon(0% 0%, 56% 0%, 100% 66.5%, 100% 100%, 0% 100%);
+}
+
+.top_side:after {
+    /*background: blue;*/
+    transform: scale(-1, 1) skewX(-8deg) translateX(7px);
+}
+
+.peak {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.peak_lower {
+    width: 46px;
+    background: var(--color);
+    border: 5px solid var(--color_dark);
+    border-bottom: 0;
+    border-top: 0;
+    height: 25px;
+}
+
+.peak_middle {
+    width: 70px;
+    aspect-ratio: 2/1.7;
+    border-radius: 40px;
+    background: var(--color);
+    border: 5px solid var(--color_dark);
+    position: relative;
+    top: 5px;
+    z-index: 2;
+}
+
+.peak_top {
+    width: 15px;
+    height: 80px;
+    background: var(--color);
+    border: 5px solid var(--color_dark);
+    border-radius: 10px;
+    position: relative;
+    top: 10px;
+}
+
+
+.tree {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*align-self: flex-end;*/
+    transform: scale(1.2);
+}
+
+.tree:before, .tree:after {
+    content: "";
+}
+
+.tree_leaves {
+    width: 120px;
+    aspect-ratio: 1/1;
+    background: #30a430;
+    border-radius: 20px;
+}
+
+.tree_stem {
+    width: 20px;
+    height: 50px;
+    background: #ec9683;
+}
+
+.tree:nth-child(2n) {
+    /*transform-origin: 50% 100%;*/
+    transform: scale(1.55);
+    z-index: 1;
+}
+
+.tree:nth-child(2n) .tree_leaves {
+    background: green;
+}
+
+
+.tree:first-of-type, .tree:last-of-type {
+    z-index: 2;
+    transform: scale(2);
+}
+
+.cloud {
+    background: white;
+    width: 200px;
+    height: 75px;
+    position: absolute;
+    border-radius: 20px;
+    bottom: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    left: 50%;
+    transform: translateX(-50%) translateX(-300px);
+}
+
+.cloud:before {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    content: "";
+    /*transform: translate(-10%, 25%);*/
+}
+
+.cloud:before {
+    background: white;
+}
+
+.c2 {
+    bottom: 450px;
+    transform: translateX(-50%) translateX(-500px);
+}
+
+.c3 {
+    bottom: 600px;
+    transform: translateX(-50%) translateX(400px);
+}
+
+
+/* Effects */
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+        box-shadow: 0px 0px 10px 5px #ffffff5e;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+        box-shadow: 0px 0px 10px 5px white;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.5);
+        box-shadow: 0px 0px 10px 5px #ffffff5e;
+    }
+}
+.star {
+	position: absolute;
+	width: 2px;
+	height: 2px;
+	background-color: white;
+	border-radius: 50%;
+	opacity: 0;
+	animation: sparkle 4s infinite alternate;
+}
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modèle - Horloger Suisse</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .luxury-text { color: #d4af37; font-family: serif; }
+        body { padding-top: 76px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand luxury-text" href="/">
+                <i class="fas fa-clock"></i> Horloger Suisse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/collection">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                        <li class="breadcrumb-item"><a href="/collection">Collection</a></li>
+                        <li class="breadcrumb-item active" aria-current="page" th:text="${timepieceId}">Modèle</li>
+                    </ol>
+                </nav>
+                
+                <div class="card shadow">
+                    <div class="card-body p-5 text-center">
+                        <i class="fas fa-crown fa-5x luxury-text mb-4"></i>
+                        <h1 class="luxury-text" th:text="${timepieceId}">Modèle Exclusif</h1>
+                        <p class="lead mb-4">Garde-temps d'exception de la collection Horloger Suisse</p>
+                        
+                        <div class="row mb-5">
+                            <div class="col-md-6">
+                                <h4>Caractéristiques Techniques</h4>
+                                <ul class="list-unstyled">
+                                    <li><strong>Mouvement:</strong> Mécanique à remontage automatique</li>
+                                    <li><strong>Réserve de marche:</strong> 48 heures</li>
+                                    <li><strong>Étanchéité:</strong> 30 mètres</li>
+                                    <li><strong>Diamètre:</strong> 40mm</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h4>Matériaux</h4>
+                                <ul class="list-unstyled">
+                                    <li><strong>Boîtier:</strong> Or 18 carats</li>
+                                    <li><strong>Cadran:</strong> Émaillé main</li>
+                                    <li><strong>Aiguilles:</strong> Acier bleui</li>
+                                    <li><strong>Bracelet:</strong> Cuir alligator</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <strong>Pièce Unique:</strong> Ce modèle fait partie de notre collection exclusive. 
+                            Votre visite a été enregistrée dans nos logs pour assurer le suivi de nos pièces rares.
+                        </div>
+                        
+                        <div class="mb-4">
+                            <span class="luxury-text h2">Prix sur demande</span>
+                        </div>
+                        
+                        <div>
+                            <a href="/contact" class="btn btn-dark btn-lg me-3">
+                                <i class="fas fa-envelope"></i> Demander un Devis
+                            </a>
+                            <a href="/collection" class="btn btn-outline-dark btn-lg">
+                                <i class="fas fa-arrow-left"></i> Retour à la Collection
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Horloger Suisse. Tous droits réservés. | Swiss Made Excellence</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

@@ -1,0 +1,40 @@
+name: United Cruiselines 3
+author: Wills
+category: Web
+
+image: ghcr.io/unitedctf/unitedctf2025/ticketboot:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: united-cruiselines
+
+type: ansible
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:M/HSFC:N=6-10
+value: 7
+
+description: |-
+  ## Description (français)
+  À côté de toi, des voyageurs parlent avec enthousiasme de leurs billets de première classe.
+
+  Accès aux loges privées, champagne à volonté, services exclusifs... une expérience de croisière sans égal.
+
+  Tu sais une chose avec certitude : pour vivre l'expérience ultime de United Cruiselines, il te faut ce billet de première classe.
+
+  ## Description (english)
+  Nearby, other passengers excitedly discuss their first-class tickets.
+
+  Access to private lounges, unlimited champagne, exclusive services... a cruise experience like no other.
+
+  You know one thing for sure: to live the full United Cruiselines experience, you need that first-class ticket.
+
+flags:
+  - flag-f1r5t_cl4s5_thym3_t0_p4rtyyy!!!?!_4a50fb71
+
+requirements:
+  - "United Cruiselines 2"
+
+tags:
+  - A:Wills
+  - V:Grèce, Athènes
+  - CFSS:0.3/TS:L/E:L/HSFC:N=1-2

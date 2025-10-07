@@ -1,0 +1,32 @@
+﻿name: Art Museum 2
+author: Atlantis11656
+category: Stéganographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 2
+
+description: |-
+  ## Description (français)
+
+  En continuant votre visite, vous tombez sur une plaque en pierre avec un petit labyrinthe creusé. L'artiste "Ajanse Dots" à laissé en description le message suivant: "En suivant le bon chemin, un secret sera révélé...". La plaque est intitulée "Abstract Structures : Coded Inputs, Instructions".
+
+  ## Description (english)
+
+  Continuing your visit, you come across a stone plaque with a small maze carved into it. The artist "Ajanse Dots" left the following message in the description: "By following the right path, a secret will be revealed...". The plaque is titled "Abstract Structures: Coded Inputs, Instructions".
+
+flags:
+- flag-3j8df4afj742-8kd-8dp338dgcq5a712-lkp3lcq51-l
+
+files:
+- maze
+
+requirements:
+- Art Museum 1
+
+tags:
+- A:Atlantis11656
+- V:Guatemala, Antigua
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

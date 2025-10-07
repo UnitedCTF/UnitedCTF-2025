@@ -1,0 +1,48 @@
+name: Les trampofolies 1
+author: Linkster78
+category: Web
+
+type: ansible
+
+image: ghcr.io/unitedctf/unitedctf2025/trampofolies:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: trampofolies
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:L/HSFC:N=4-7
+value: 4
+
+description: |-
+  ## Description (français)
+  Lors de votre périple à Regina, vous rencontrez une petite bande très enthousiaste d'amateurs de trampolines.
+
+  Bien qu'ils soient généralement heureux, récemment, rien ne va plus. Un groupe de trolls anti-trampolines a défacé leur wiki, désactivé les contributions, installé une porte dérobée et retiré les accès de l'administrateur.
+
+  Votre première tâche est de retirer l'image obscène qui a été ajouté par les trolls.
+
+  - Le serveur utilise la version 1.44.0 de MediaWiki.
+  - Le code de la porte dérobée a été inclu avec le défi, elle peut être appliquée avec la commande `patch`.
+  - Vous pouvez valider la complétion du défi et obtenir le flag en visitant /checkflag1.php
+
+  ## Description (english)
+  During your trip in Regina, you meet a small group of very enthusiastic trampoline amateurs.
+
+  While they're typically very happy, recently, everything has gone downhill. A group of anti-trampoline trolls has defaced their wiki, deactivated contributions, installed a backdoor and removed the administrator's access.
+
+  Your first task is to remove the obscene image that was added by the trolls.
+
+  - The server is running version 1.44.0 of MediaWiki.
+  - The code of the backdoor is included with the challenge, it can be applied with the `patch` command.
+  - You may validate the completion of the challenge and obtain the flag by visiting /checkflag1.php
+
+flags:
+- flag-7aa47b8f0106691e
+
+files:
+- server/rest.php.diff
+
+tags:
+- A:Linkster78
+- V:Canada, Regina
+- CFSS:0.3/TS:I/E:L/HSFC:N=4-7

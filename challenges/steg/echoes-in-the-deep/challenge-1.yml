@@ -1,0 +1,33 @@
+name: Echoes in the deep 1
+author: Wills
+category: Stéganographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 2
+
+description: |-
+  ## Description (français)
+  
+  Lors de votre excursion sous-marine à bord du Titan, dans les abysses de l'océan Atlantide, vous percevez des signaux mystérieux résonnant autour de votre sous-marin.
+
+  Vous distinguez deux signaux distincts, comme deux chants qui s'entrelacent et s'harmonisent...
+
+  ## Description (english)
+
+  During your submarine expedition aboard the Titan, deep in the abyss of the Atlantic ocean, you begin to hear strange signals echoing around your vessel.
+  
+  Slowly, you realize there are two distinct signals, like two voices intertwining in harmony...
+
+flags:
+- flag-n3w_sh3llph0n3_wh0_d1s_72ed7c692cf0e933
+
+files:
+- titan.pcapng
+
+tags:
+- A:Wills
+- V:41.7344°N 49.9424°W
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

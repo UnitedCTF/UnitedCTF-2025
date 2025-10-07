@@ -1,0 +1,9 @@
+<html>
+<body>
+    <button onclick="location.href='/admin'">Admin page</button>
+    <h1>Event monitoring:</h1>
+    {% for event in events %}
+    <p>{{ event }}</p>
+    {% endfor %}
+</body>
+</html>

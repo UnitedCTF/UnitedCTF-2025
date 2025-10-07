@@ -1,0 +1,29 @@
+﻿name: Cap de Bonne-Espérance 2
+author: Atlantis11656
+category: Stéganographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 2
+
+description: |-
+  ## Description (français)
+  
+  Il semble avoir une image cachée dans la photo souvenir que vous avez trouvée au Cap de Bonne-Espérance. En examinant de plus près, vous remarquez qu'elle semble un peu endommagée...
+ 
+  ## Description (english)
+  
+  There seems to be a hidden image in the souvenir photo you found at the Cape of Good Hope. Upon closer inspection, you notice it looks a bit damaged...
+
+flags:  
+- flag-782b49f5-c3aa-415f-bd78-05ea55de39d8
+
+requirements:
+  - Cap de Bonne-Espérance 1
+
+tags:
+- A:Atlantis11656
+- V:Afrique du Sud, Cap de Bonne-Espérance
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

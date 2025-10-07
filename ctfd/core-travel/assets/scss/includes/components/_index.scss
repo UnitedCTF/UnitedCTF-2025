@@ -1,0 +1,79 @@
+.index-body {
+    background-color: #a1cde3;
+    color: #222f57;
+    height: inherit;
+
+    main {
+        margin: 0;
+    }
+
+    .with-some-room {
+        padding: 8rem 0 8rem 0;
+    }
+
+    .logo {
+        filter: drop-shadow(0 0 .1rem #00000038);
+        animation: flutter 10s infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+    @keyframes flutter {
+        0% { transform: translateY(10px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(10px); }
+    }
+
+    .btn-primary {
+        &, &:hover, &:active {
+            background-color: #f8a335;
+            border: none;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-top: .5rem;
+            border-radius: .5rem;
+        }
+
+        &:hover {
+            background-color: #fc9309;
+        }
+    }
+
+    .sponsors {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .sponsors-gold img {
+        width: 350px;
+    }
+
+    .sponsors-silver img {
+        width: 200px;
+    }
+}
+
+#cloud-container {
+    pointer-events: none;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+}
+
+#cloud-container-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.cloud {
+    position: absolute;
+    z-index: -100;
+    filter: invert(97%) sepia(4%) saturate(885%) hue-rotate(177deg) brightness(101%) contrast(93%);
+    opacity: 0.85;
+}

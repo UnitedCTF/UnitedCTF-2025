@@ -1,0 +1,12 @@
+services:
+  part1:
+    image: ghcr.io/unitedctf/unitedctf2025/custom-fs/part-1:latest
+    build:
+      context: ./src
+      dockerfile: Dockerfile-part1
+
+  part2:
+    image: ghcr.io/unitedctf/unitedctf2025/custom-fs/part-2:latest
+    build:
+      context: ./src
+      dockerfile: Dockerfile-part2

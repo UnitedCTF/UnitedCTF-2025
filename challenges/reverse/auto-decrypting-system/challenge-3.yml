@@ -1,0 +1,32 @@
+name: Auto Decrypting System 3
+author: Romain
+category: Rétro-ingénierie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:M/HSFC:Y=7-12
+value: 1
+
+requirements:
+  - "Auto Decrypting System 2"
+
+description: |-
+  ## Description (français)
+
+  Une étape de plus de complétée ! Maintenant, il faut réussir à déchiffrer la
+  partition chiffrée. Il parait que des informations intéressantes se trouvent
+  dans le fichier /flag.txt de cette partition.
+
+  ## Description (english)
+
+  One more step completed! Now, you need to decrypt the encrypted partition.
+  There should be interesting stuff in the /flag.txt file of this partition.
+
+flags:
+- flag-9bca1f01f4292830
+
+tags:
+- A:Romain
+- V:Corée du Nord, Pyongyang
+- CFSS:0.3/TS:I/E:M/HSFC:Y=7-12

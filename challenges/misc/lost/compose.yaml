@@ -1,0 +1,11 @@
+services:
+  lost:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/lost:latest
+    ports:
+      - "10456:10456"
+    environment:
+      SSH_ADDR: tcp4://0.0.0.0:10456
+      SSH_USER: paul
+      SSH_PASS: i_hope_you_wont_need_this
+      SSH_FLAG: flag-idk_where_you_are_but_heres_a_flag_for_your_trouble_4a1818496f8c0048

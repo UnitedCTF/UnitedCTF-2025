@@ -1,0 +1,40 @@
+name: Horloger Suisse 1
+author: Seneque
+category: Web
+
+type: ansible
+
+image: ghcr.io/unitedctf/unitedctf2025/horloger-suisse:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: horloger-suisse
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:M/HSFC:N=4-7
+value: 4
+
+description: |-
+  ## Description (français)
+
+  Lors de votre voyage en Suisse, vous tombez sous le charme d'une prestigieuse boutique d'horlogerie genevoise fondée en 1847. Leurs garde-temps d'exception attirent votre attention, mais c'est leur site web qui pique votre curiosité de voyageur numérique. Le maître horloger semble avoir mis plus de soin dans ses montres que dans sa sécurité informatique.
+
+  Mission: Explorez les rouages numériques de cette boutique d'exception pour découvrir les secrets cachés dans l'atelier virtuel. Votre périple vous mènera des logs de surface jusqu'aux privilèges les plus élevés du système.
+  
+  _PS: On me dit que leur serveur n'a pas été mis à jour depuis 2021. C'est surprenant qu'il soit toujours en ligne..._
+
+  
+  ## Description (english)
+
+  During your travels through Switzerland, you stumble upon a prestigious Geneva watchmaking boutique founded in 1847. Their exceptional timepieces catch your eye, but it's their website that sparks your curiosity as a digital traveler. The master clockmaker seems to have put more care in his watches than in his cybersecurity.
+
+  Mission: Explore the digital clockwork of this exceptional boutique to uncover the secrets hidden within the virtual workshop. Your journey will take you from surface logs to the highest system privileges.
+  
+  _PS: I heard their server hasn't been updated since 2021. It's surprising that it's still online..._
+
+flags:
+- flag-l0g4j_t1m3_1s_pr3c10us_sw1ss_h0rl0g3r
+
+tags:
+- A:Seneque
+- V:Suisse, Zurich
+- CFSS:0.3/TS:B/E:M/HSFC:N=4-7

@@ -1,0 +1,27 @@
+==========================================
+ ____    _    _   _  ____ _____ ____    _
+|  _ \\  / \\  | \\ | |/ ___| ____|  _ \\  | |
+| | | |/ _ \\ |  \\| | |  _|  _| | |_) | | |
+| |_| / ___ \\| |\\  | |_| | |___|  _ <  |_|
+|____/_/   \\_\\_| \\_|\\____|_____|_| \\_\\ (_)
+
+==========================================
+
+Français :
+
+Ce système est la propriété du gouvernement de la Corée du Nord. Tout accès non
+autorisé est interdit et sera puni par la peine de mort.
+
+Le disque dur de ce système est chiffré au repos pour empêcher toute
+exfiltration de données. Toute tentative de récupération des données est futile.
+
+English:
+
+This system is the property of the North Korean government. Any unauthorized
+access is forbidden and will be punished by death.
+
+The hard drive of this system is encrypted at rest to prevent any data
+exfiltration. Any attempt to recover data is futile.
+
+==========================================
+

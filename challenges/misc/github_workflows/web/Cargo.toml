@@ -1,0 +1,10 @@
+[package]
+name = "github_workflows"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+serde = { version = "1.0.225", features = ["derive"] }
+reqwest = "0.12.23"
+rocket = { version = "0.5.1", features = ["json"] }
+env = "1.0.1"

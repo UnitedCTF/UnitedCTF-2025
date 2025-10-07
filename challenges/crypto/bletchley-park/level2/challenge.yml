@@ -1,0 +1,36 @@
+name: Bletchley Park 2
+author: Atlantis11656
+category: Cryptographie
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 3
+
+
+description: |-
+  ## Description (français)
+
+  Fièr/ère de vos talents en cryptographie, vous vous demandez si d'autres messages secrets sont cachés dans Bletchley Park. En arrivant au Bloc H, vous trouvez un nouveau post-it! Il semble être encore plus en mauvais état que le précédent, mais vous pouvez distinguer quelques lettres et symboles.
+
+  Format du flag : flag-unitedctf-[a-z]{9}-[a-z]{5}-[a-z]{2}-[a-z]{6}
+
+  ## Description (english)
+
+  Proud of your cryptography skills, you wonder if there are more secret messages hidden in Bletchley Park. Upon arriving at Block H, you find another post-it note! It seems to be in even worse condition than the previous one, but you can make out some letters and symbols.
+
+  Flag format: flag-unitedctf-[a-z]{9}-[a-z]{5}-[a-z]{2}-[a-z]{6}
+
+requirements:
+- Bletchley Park 1
+
+flags:
+- flag-unitedctf-aozsgioro-toasg-oq-hifdwg
+
+files:
+- post-it.txt
+
+tags:
+- A:Atlantis11656
+- V:Angleterre, Milton Keynes
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4

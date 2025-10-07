@@ -1,0 +1,27 @@
+name: Vol en côte d'Azure 3
+author: Seneque
+category: Infonuagique
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 2
+
+description: |-
+  ## Description (français)
+  Finissez votre enquête.
+  
+  ## Description (english)
+  Finish your investigation.
+
+flags:
+- flag-ohoh-the-king-has-dirty-hands
+
+tags:
+- A:Seneque
+- V:France, Côte d'Azur
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+
+requirements:
+- "Vol en côte d'Azure 2"

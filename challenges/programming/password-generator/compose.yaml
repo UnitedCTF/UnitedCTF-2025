@@ -1,0 +1,6 @@
+services:
+  web:
+    build: server
+    image: ghcr.io/unitedctf/unitedctf2025/password-generator:latest
+    ports:
+      - 5000:5000

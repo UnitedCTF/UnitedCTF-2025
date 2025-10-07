@@ -1,0 +1,32 @@
+name: Desjardins - Interception 1
+author: LeRoux
+category: Radio
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 3
+
+description: |-
+  ## Description (français)
+
+  Un signal étrange a été intercepté. À la vue du signal, tout est devenu plus clair.
+  Taux d’échantillonnage : 100000000
+
+  Signal: https://drive.google.com/file/d/1bVRu4Tzysl44T3bAsBcrjhhvy70u3qlR/view?usp=sharing
+
+  ## Description (english)
+
+  A strange signal was intercepted. Upon seeing the signal, everything became clearer.
+  Sample rate: 100000000
+
+  Signal: https://drive.google.com/file/d/1bVRu4Tzysl44T3bAsBcrjhhvy70u3qlR/view?usp=sharing
+
+flags:
+- Flag-Crocodile_Avec_Un_K
+
+tags:
+- A:LeRoux
+- V:États-Unis, Fairbanks
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4

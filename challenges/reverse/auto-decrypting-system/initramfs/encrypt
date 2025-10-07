@@ -1,0 +1,53 @@
+#!/usr/bin/ash
+
+run_hook() {
+    local quiet rootdelay
+    modprobe -a -q dm-crypt >/dev/null 2>&1
+    quiet="$(getarg quiet)"
+    [ "${quiet}" = "y" ] && CSQUIET=">/dev/null"
+
+    if [ -n "${cryptdevice}" ]; then
+        # cryptdevice can contain : which needs to be escaped.
+        # shellcheck disable=SC2162
+        IFS=: read cryptdev cryptname cryptoptions <<EOF
+$cryptdevice
+EOF
+    fi
+
+    set -f
+    OLDIFS="$IFS"; IFS=,
+    for cryptopt in ${cryptoptions}; do
+        case ${cryptopt} in
+            allow-discards|discard)
+                cryptargs="${cryptargs} --allow-discards"
+                ;;
+            no-read-workqueue|perf-no_read_workqueue)
+                cryptargs="${cryptargs} --perf-no_read_workqueue"
+                ;;
+            no-write-workqueue|perf-no_write_workqueue)
+                cryptargs="${cryptargs} --perf-no_write_workqueue"
+                ;;
+            sector-size=*)
+                cryptargs="${cryptargs} --sector-size ${cryptopt#*=}"
+                ;;
+            *)
+                echo "Encryption option '${cryptopt}' not known, ignoring." >&2
+                ;;
+        esac
+    done
+    set +f
+    IFS="$OLDIFS"
+    unset OLDIFS
+
+    if resolved=$(resolve_device "${cryptdev}" "${rootdelay}"); then
+        if cryptsetup isLuks "${resolved}" >/dev/null 2>&1; then
+            # Hmmmm... Je me demande ce que ça fait...
+            # Hmmmm... I wonder what this does...
+            # flag-382b4c81f98402cd
+            auto_decrypt ${resolved} ${cryptname}
+            echo "Auto-decrypt program executed and returned $?."
+        fi
+    fi
+}
+
+# vim: set ft=sh ts=4 sw=4 et:

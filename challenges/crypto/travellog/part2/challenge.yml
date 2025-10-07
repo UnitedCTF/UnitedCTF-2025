@@ -1,0 +1,42 @@
+name: "Travel Log 2"
+author: "rkletr"
+category: Cryptographie
+type: standard
+# CFSS:0.3/TS:I/E:L/HSFC:N=4-7
+value: 4
+
+description: |-
+  ## Description (français)
+
+  Okay, apparemment mon programme n'est pas aussi bon que je pensais.
+
+  Tant qu'à être là, pourrais-tu m'aider un peu?
+
+  Un utilisateur vient de me dire qu'il ne pouvait pas se connecter et m'a envoyé une copie de sa base de données. J'ai regardé et... leur mot de passe a été corrompu!
+
+  Les entrées de journal devraient être encore valides, peux-tu les déchiffrer et récupérer l'important secret de l'utilisateur?
+
+  ## Description (english)
+
+  Okay, maybe my program isn't as great as I made it out to be.
+
+  But while you're here, how about helping me a little?
+
+  A user just told me they couldn't log in, and sent me a copy of their database. I looked into it and... their password got corrupted!
+
+  Their log entries should still be good though, can you decrypt them and get the user's important secret back?
+
+files:
+  - ../program.py
+  - ./travel.db
+
+flags:
+  - flag-k3y5tre4mr3use_ee810cb2
+
+tags:
+  - A:rkletr
+  - V:Nouvelle-Calédonie, Nouméa
+  - CFSS:0.3/TS:I/E:L/HSFC:N=4-7
+
+requirements:
+  - Travel Log 1

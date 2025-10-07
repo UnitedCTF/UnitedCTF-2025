@@ -1,0 +1,37 @@
+name: Cypherpunks - Postcard 
+author: MyMelody1242 
+category: Cryptographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.2/TS:B/E:L/HSFC:N=2-4
+value: 2
+
+description: |-
+  ## Description (français)
+  Hey salut! Nous autre on a bin du fun ici, on va rester encore une semaine de plus. Viens dont nous rejoindre!
+  
+  Adresse postcard : 2uP4L2A1U4rCDJLZEgbnnoV6irEqgGcgnBi9KnJ6vNbb (Solana devnet)<br>
+  IPFS viewer : https://ipfsviewer.com/<br>
+  Solana explorer : https://explorer.solana.com/<br>
+  Metaplex explorer : https://core.metaplex.com/explorer<br>
+  Solscan : https://solscan.io
+
+  ## Description (english)
+  
+  Hey there! We’re having a blast here and decided to stick around for one more week. Come join us!
+
+  Postcard address : 2uP4L2A1U4rCDJLZEgbnnoV6irEqgGcgnBi9KnJ6vNbb (Solana devnet)<br>
+  IPFS viewer : https://ipfsviewer.com/<br>
+  Solana explorer : https://explorer.solana.com/<br>
+  Metaplex explorer : https://core.metaplex.com/explorer<br>
+  Solscan : https://solscan.io
+
+flags:
+- flag-Cyph3rpunk3_writ3_c0d3
+
+tags:
+- A:MyMelody1242
+- V:États-Unis, Austin
+- CFSS:0.2/TS:B/E:L/HSFC:N=2-4

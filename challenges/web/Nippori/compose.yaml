@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/nippori:latest
+    ports:
+    - 8080:80

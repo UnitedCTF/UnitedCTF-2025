@@ -1,0 +1,69 @@
+dn: ou=users,dc=cloridorme,dc=unitedctf
+changetype: add
+objectClass: organizationalUnit
+ou: users
+
+dn: uid=jodoe,ou=users,dc=cloridorme,dc=unitedctf
+changetype: add
+objectClass: inetOrgPerson
+objectClass: extensibleObject
+uid: jodoe
+sn: Doe
+givenName: John
+cn: John Doe
+displayName: John Doe
+mail: jodoe@cloridorme.unitedctf
+description: flag-th15_5h0uld_n0t_b3_s33n_923a12cd
+mobile: 808 080 0800 265
+o: hidden
+
+dn: uid=pjordan,ou=users,dc=cloridorme,dc=unitedctf
+changetype: add
+objectClass: inetOrgPerson
+objectClass: extensibleObject
+uid: pjordan
+sn: Jordan
+givenName: Paul
+cn: Paul Jordan
+displayName: Paul Jordan
+mail: pjordan@cloridorme.unitedctf
+mobile: 999 999 1997
+o: visible
+
+dn: uid=ssearch,ou=users,dc=cloridorme,dc=unitedctf
+changetype: add
+objectClass: inetOrgPerson
+objectClass: extensibleObject
+uid: ssearch
+sn: Search
+givenName: Search
+cn: Search Search
+displayName: Search Search
+mail: ssearch@cloridorme.unitedctf
+o: visible
+
+dn: uid=llaflamme,ou=users,dc=cloridorme,dc=unitedctf
+changetype: add
+objectClass: inetOrgPerson
+objectClass: extensibleObject
+uid: llaflamme
+sn: Laflamme
+givenName: Lucy
+cn: Lucy Laflamme
+displayName: Lucy Laflamme
+mail: llaflamme@cloridorme.unitedctf
+mobile: 555 111 0001
+o: visible
+
+dn: uid=jtremblay,ou=users,dc=cloridorme,dc=unitedctf
+changetype: add
+objectClass: inetOrgPerson
+objectClass: extensibleObject
+uid: jtremblay
+sn: Tremblay
+givenName: John
+cn: John Tremblay
+displayName: John Tremblay
+mail: jtremblay@cloridorme.unitedctf
+mobile: 127 123 4521
+o: visible

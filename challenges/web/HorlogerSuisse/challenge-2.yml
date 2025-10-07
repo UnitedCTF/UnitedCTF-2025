@@ -1,0 +1,39 @@
+name: Horloger Suisse 2
+author: Seneque
+category: Web
+
+type: ansible
+
+image: ghcr.io/unitedctf/unitedctf2025/horloger-suisse:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: horloger-suisse
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 3
+
+description: |-
+  ## Description (français)
+
+  Lors de votre voyage en Suisse, vous tombez sous le charme d'une prestigieuse boutique d'horlogerie genevoise fondée en 1847. Leurs garde-temps d'exception attirent votre attention, mais c'est leur site web qui pique votre curiosité de voyageur numérique. Le maître horloger semble avoir mis autant de soin dans ses montres que... peu dans sa sécurité informatique.
+
+  Mission : Devenez les patrons de l'horloger Suisse !
+
+  
+  ## Description (english)
+
+  During your travels through Switzerland, you stumble upon a prestigious Geneva watchmaking boutique founded in 1847. Their exceptional timepieces catch your eye, but it's their website that sparks your curiosity as a digital traveler. The master clockmaker seems to have put as much care into his watches as... little into his cybersecurity.
+
+  Mission: Become the patron of the Swiss Horloger!
+
+flags:
+- flag-t1m3_1s_r00t_sw1ss_m4st3r_h0rl0g3r_rul3s_th3_t1m3
+
+requirements:
+- "Horloger Suisse 1"
+
+tags:
+- A:Seneque
+- V:Suisse, Zurich
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4

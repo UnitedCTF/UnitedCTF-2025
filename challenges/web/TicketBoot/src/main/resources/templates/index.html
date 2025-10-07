@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Cruiselines Ticket Booth</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+
+<div id="sun"></div>
+<div id="sunSet"></div>
+<div id="sky"></div>
+<div id="horizon"></div>
+<div id="division"></div>
+<div id="water"></div>
+<div id="waterReflectionContainer">
+    <div id="waterReflectionMiddle"></div>
+</div>
+
+<div id="waterDistance" ></div>
+<div id="oceanRippleContainer"></div>
+<div id="oceanRipple"></div>
+
+<div id="wholeship" th:if="${!hideShip}">
+    <div id="ship-container">
+        <div class="ship">
+            <div class="smokestack ss1">
+                <div class="smoke smoke1"></div>
+            </div>
+            <div class="smokestack ss2"><div class="smoke smoke2"></div></div>
+            <div class="smokestack ss3"><div class="smoke smoke3"></div></div>
+            <div class="smokestack ss4"><div class="smoke smoke4"></div></div>
+            <div class="deck">
+                <div class="compartments-lower">
+                    <div class="door d1"></div>
+                    <div class="door d2"></div>
+                    <div class="door d3"></div>
+                    <div class="door d4"></div>
+                    <div class="door d5"></div>
+                    <div class="door d6"></div>
+                    <div class="door d7"></div>
+                    <div class="door d8"></div>
+                    <div class="door d9"></div>
+                    <div class="door d10"></div>
+                    <div class="door d11"></div>
+                    <div class="door d12"></div>
+                    <div class="door d13"></div>
+                </div>
+                <div class="compartments-upper">
+                    <div class="cph cp1"></div>
+                    <div class="cph cp2"></div>
+                    <div class="cph cp3"></div>
+                    <div class="cph cp4"></div>
+                    <div class="cph cp5"></div>
+                    <div class="cph cp6"></div>
+                    <div class="cph cp7"></div>
+                    <div class="cph cp8"></div>
+                    <div class="cph cp9"></div>
+                    <div class="cph cp10"></div>
+                    <div class="cph cp11"></div>
+                    <div class="cph cp12"></div>
+                </div>
+                <div class="roof"></div>
+            </div>
+            <div class="hull">
+                <div class="hull-top">
+                    <div class="porthole p1"></div>
+                    <div class="porthole p2"></div>
+                    <div class="porthole p3"></div>
+                    <div class="porthole p4"></div>
+                    <div class="porthole p5"></div>
+                    <div class="porthole p6"></div>
+                    <div class="porthole p7"></div>
+                    <div class="porthole p8"></div>
+                    <div class="porthole p9"></div>
+                    <div class="porthole p10"></div>
+                    <div class="porthole p11"></div>
+                    <div class="porthole p12"></div>
+                    <div class="porthole p13"></div>
+                    <div class="porthole p14"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div>
+        <header>
+            <h1>🌞 Welcome to United Cruiselines 🎟️</h1>
+        </header>
+
+        <!-- Ticket Submission Form -->
+        <section>
+            <div class="form-panel">
+                <h2>🎫 Buy your ticket</h2>
+                <form th:action="@{/ticket}" th:object="${ticket}" method="post" class="ticket-form">
+                    <table>
+                        <tr>
+                            <td><label for="name"><strong>Your Name</strong></label></td>
+                            <td><input id="name" type="text" th:field="*{name}" required /></td>
+                        </tr>
+                        <tr>
+                            <td><label for="couponCode"><strong>Coupon Code</strong></label></td>
+                            <td><input id="couponCode" type="text" th:field="*{couponCode}" /></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="alert alert-warning" th:if="${#fields.hasErrors('couponCode')}" th:errors="*{couponCode}">Invalid coupon</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="🎟️ Buy your Ticket 🎟️" />
+                            </td>
+                        </tr>
+                    </table>
+                    <div th:if="${ticketId != null}">
+                        <p><strong>Your Ticket ID: <span th:text="${ticketId}">ticket-id</span></strong></p>
+                    </div>
+                    <div class="alert alert-warning" th:if="${#fields.hasErrors('name')}" th:errors="*{name}" />
+                </form>
+            </div>
+
+        </section>
+
+        <!-- Ticket Lookup -->
+        <section>
+            <div class="form-panel">
+                <h2>🎫 View your Ticket</h2>
+                <form th:action="@{/ticket}" method="get" class="ticket-form">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <input type="text" name="ticketId" placeholder="Enter Ticket ID"
+                                       pattern="^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$"
+                                       title="Please enter a valid UUID" required />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="submit" value="🎟️ View your Ticket 🎟️" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+
+        <footer>⛱️ We hope you have a fun and safe cruise! ⛱️</footer>
+    </div>
+
+
+    <div id="modalContainer" class="modal-container" th:if="${ticket.id != null}" th:attr="style='display:block'">
+        <!-- Display Ticket Details -->
+        <div class="popup-content">
+            <div class="ticket-details">
+                <h2>🎟️ Here's your ticket!</h2>
+                <p><strong>ID:</strong> <span th:text="@{__${ticket.id}__}">ticket-id</span></p>
+                <p><strong>Name:</strong> <span th:text="@{__${ticket.name}__}">ticket-msg</span></p>
+                <p><strong>Flag:</strong> <span th:text="@{__${ticket.flag}__}">ticket-msg</span></p>
+                <button class="close">Another ticket!</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- TODO : remove the /actuator endpoint before going into production -->
+<script>
+    var modal = document.getElementById("modalContainer");
+    var span = document.getElementsByClassName("close")[0];
+
+    // Automatically open modal if ticket is present
+    if (modal && modal.style.display !== "none") {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+</body>
+</html>
+<!-- /app/resources/templates/index.html -->

@@ -1,0 +1,29 @@
+﻿name: Cap de Bonne-Espérance 1
+author: Atlantis11656
+category: Stéganographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 2
+
+description: |-
+  ## Description (français)
+  
+  Vous êtes un touriste en visite au Cap de Bonne-Espérance, l'un des endroits les plus emblématiques d'Afrique du Sud. En explorant les paysages magnifiques, vous trouvez une photo souvenir. Il est ecrit "passwd: unitedctf" sur le dos. Mais cette image semble cacher plus qu'un simple souvenir...
+
+  ## Description (english)
+  
+  You are a tourist visiting the Cape of Good Hope, one of the most iconic places in South Africa. While exploring the beautiful landscapes, you find a souvenir photo. It is written "passwd: unitedctf" on the back. But this image seems to hide more than just a simple souvenir...
+
+flags:  
+- flag-e0523a83-0d51-4319-8d2b-96b31edda60d
+
+files:
+- cap_bonne_esperance.jpg
+
+tags:
+- A:Atlantis11656
+- V:Afrique du Sud, Cap de Bonne-Espérance
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

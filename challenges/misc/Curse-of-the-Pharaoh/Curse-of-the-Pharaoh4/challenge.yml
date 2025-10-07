@@ -1,0 +1,34 @@
+name: Curse of the Pharaoh 4
+author: Lea1496
+category: Varia
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:M/HSFC:N=6-10
+value: 8
+
+description: |-
+  ## Description (français)
+
+  On dirait que le pharaon a truqué le jeu en sa faveur... Mais comment le battre?
+
+  Note : Lorsque vous l'aurez battu, le flag apparaîtra à sa gauche.
+
+  ## Description (english)
+
+  It looks like the pharaoh has rigged the game in his favor... But how can you beat him?”
+
+  Note : Once you have defeated him, the flag will appear on his left.
+
+flags:
+- flag-7r0yc43d
+
+hints:
+- Et si on injectait un système ECS dans le jeu...? / What about injecting an ECS system into the game...?
+- L'ordre d'exécution des systèmes est important. / The order of execution of systems is important.
+
+tags:
+- A:Lea1496
+- V:Égypte, Gizeh
+- CFSS:0.3/TS:I/E:M/HSFC:N=6-10

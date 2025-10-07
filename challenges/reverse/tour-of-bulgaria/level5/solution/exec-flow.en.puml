@@ -1,0 +1,112 @@
+@startuml
+title Level 5 Bytecode Execution Flow
+
+start
+
+:Open "/jumbled_flag" file;
+note right: OpenCommand - Mode 0 (read) to R15
+
+:Create 8-byte buffer;
+note right: CreatePtrCommand - Allocate buffer in R10
+
+:Set loop counter to 2;
+note right: SetLoopCounterCommand
+
+partition "Phase 1: Initial Decryption Loop" {
+  :Loop Start (ID: 101);
+  repeat
+    :Read 8 bytes from file to buffer;
+    note right
+      ReadCommand
+      Size: 8 bytes
+      From: R15 (file descriptor)
+      To: R10 (buffer)
+    end note
+    
+    :Load data from buffer to R11;
+    note right: LoadFromBufferCommand - Offset 0
+    
+    :XOR R11 with hardcoded key;
+    note right
+      XORValueCommand
+      Key: 0xBAADF00DDEADBEEF
+    end note
+    
+    :Print decrypted data;
+    note right: PrintCommand R11
+    
+  :Iterate Loop (ID: 101);
+  repeat while (loop counter > 0)
+}
+
+:Set R14 to 0;
+note right: SetValueCommand - Initialize R14
+
+:Create string "R3VER53!" in RBX;
+note right
+  CreateStringCommand
+  String: "R3VER53!"
+  Register: RBX, ID: 1
+end note
+
+:Read 8 bytes for password input;
+note right
+  ReadCommand
+  From: R14 (stdin)
+  To: R10 (buffer)
+end note
+
+:Load password data to R11;
+
+:Create jump command (ID: 100);
+
+partition "Phase 1.5: Password Validation" {
+  if (R11 == RBX?) then (password matches "R3VER53!")
+    :Add True Label (ID: 100);
+    :Set R14 to 3;
+    note right: SetValueCommand - Loop 3 times
+    
+    :Set loop counter from R14;
+    note right: SetLoopCounterFromRegisterCommand
+    
+    partition "Phase 2: Advanced Decryption Loop" {
+      :Loop Start (ID: 102);
+      repeat
+        :Read 8 bytes from file to buffer;
+        note right
+          ReadCommand
+          From: R15 (file)
+          To: R10 (buffer)
+        end note
+        
+        :Load data from buffer to R13;
+        note right: LoadFromBufferCommand - Offset 0
+        
+        :XOR R13 with R11 (current key);
+        note right: XORFromRegisterCommand
+        
+        :Add 0x1111111111111111 to R11;
+        note right
+          AddValueCommand
+          Key evolution step
+        end note
+        
+        :XOR R13 with evolved R11;
+        note right: XORFromRegisterCommand - Second XOR
+        
+        :Print decrypted data;
+        note right: PrintCommand R11
+        
+      :Iterate Loop (ID: 102);
+      repeat while (loop counter > 0)
+    }
+  else (password incorrect)
+    :Add False Label (ID: 100);
+    :Jump to end;
+    note right: Password validation failed
+  endif
+}
+
+stop
+
+@enduml

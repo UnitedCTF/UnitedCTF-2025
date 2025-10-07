@@ -1,0 +1,5 @@
+Même les meilleurs systèmes de chiffrement ont besoin d'un programme de démarrage non chiffré !
+
+Even the most encrypted systems need something unencrypted to boostrap the rest!
+
+flag-e0219a0535a7a028

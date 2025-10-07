@@ -1,0 +1,11 @@
+Nous y sommes presque ! Le système a bien été déchiffré, mais il reste une dernière barrière.
+Il semblerait que le dossier utilisateur de "arch" est chiffré avec le même mot de passe que le disque.
+J'espère que tu as déchiffré le système correctement et que tu connais déjà le mot de passe !
+Pour trouver le dernier flag, tu dois te connecter au user "arch" avec le mot de passe de chiffrement du disque en démarrant le système normalement.
+
+We're almost there! You have successfully decrypted the system, but there is one last layer of security.
+It looks like the "arch" user has its home directory encrypted with the same passphrase as the disk.
+I hope you didn't use any loophole to decrypt the disk and already know the password!
+Finding the last flag should be as easy as logging in as "arch" with the disk encryption password when the system boots normally.
+
+flag-9bca1f01f4292830

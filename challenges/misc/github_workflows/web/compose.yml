@@ -1,0 +1,4 @@
+services:
+  deployer:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/d8-deployer:latest

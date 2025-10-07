@@ -1,0 +1,6 @@
+services:
+  jkt-check-in-kiosk:
+    build: ./server
+    image: ghcr.io/unitedctf/unitedctf2025/jkt-check-in-kiosk:latest
+    ports:
+      - "1337:1337"

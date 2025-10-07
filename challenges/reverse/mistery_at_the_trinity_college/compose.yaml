@@ -1,0 +1,6 @@
+services:
+  chall:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/mystery-at-the-trinity-college:latest
+    ports:
+      - 8080:8080

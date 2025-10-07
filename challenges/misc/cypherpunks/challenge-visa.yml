@@ -1,0 +1,64 @@
+name: Cypherpunks - Visa
+author: MyMelody1242
+category: Cryptographie
+description: |-
+  ## Description (français)
+
+  Bienvenue aux États-Unis.
+  Pour accéder à ce programme spécial, l’obtention d’un visa électronique est obligatoire et réservé uniquement aux personnes invitées.
+  Cette procédure répond aux nouvelles exigences fédérales en matière d’identification et de conformité.
+
+  Avant de demander un visa, vous devez faire une demande pour obtenir un mint de votre copie d'invitation (voir README dans snippet_kit).
+
+  Toutes les données transmises sont traitées en toute confidentialité et utilisées uniquement pour vérification.
+  In God We Trust.
+
+  Note du créateur : Un visa valide est requis pour obtenir le flag et passer au défi 3. Réclamez votre flag avec get_flag.py dès que vous avez obtenue votre visa, cela évite les problèmes en cas de panne du réseau.
+  Le réseau solana est connu pour être rapide, mais si cela ne prend pas effet immédiatement réessayez quelques secondes plus tard.
+
+  Pour toute assistance technique, vous pouvez m'écrire directement sur discord.
+
+  Lisez le README de snippet_kit, il y a des hints.
+
+  Program ID : FpaNQ2k5FehXLPpHjsAEYv1R3MS9d7iWTcGeYDx9z4sV
+
+  ## Description (english)
+
+  Welcome to the United States.
+  Access to this special program requires an electronic visa, available by invitation only.
+  This process complies with new federal requirements for identification and security.
+
+  Before requesting a visa, you first need to mint an invitation (read the README in snippet_kit).
+
+  All submitted information is handled in strict confidence and used solely for verification purposes.
+  In God We Trust.
+
+  Note from the creator : A valid visa is required to obtain the flag and proceed to challenge 3. Claim your flag with get_flag.py as soon as you have obtained your visa to avoid issues in case of a network outage.
+  Solana is known for its speed, but if the action does not take effect immediately, please try again a few seconds later.
+
+  If you need technical support, DM me on discord.
+
+  Read the README in snippet_kit for hints.
+
+  Program ID : FpaNQ2k5FehXLPpHjsAEYv1R3MS9d7iWTcGeYDx9z4sV
+value: 4
+
+image: ghcr.io/unitedctf/unitedctf2025/cypherpunks:latest
+connection_info: https://cypherpunks.challenges.unitedctf.ca/
+
+flags:
+- flag-vis@_gr@nt3d_s33_U_n3xt_t1m3
+
+files:
+- snippet_kit.tar.gz
+
+tags:
+- A:MyMelody1242
+- V:États-Unis, Austin
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+
+requirements:
+- Cypherpunks - Postcard
+playbook_name: static_http
+deploy_parameters:
+  chall_name: cypherpunks

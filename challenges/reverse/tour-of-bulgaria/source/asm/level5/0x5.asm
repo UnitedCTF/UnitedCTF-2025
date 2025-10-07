@@ -1,0 +1,1 @@
+mov ![register]!, ![value]!

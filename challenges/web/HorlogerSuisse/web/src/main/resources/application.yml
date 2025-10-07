@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /
+
+spring:
+  application:
+    name: horloger-suisse
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+  
+# VULNERABLE SETTING: Enable JNDI for Log4j exploitation
+# JNDI lookups are enabled by default in Log4j 2.14.1 (CVE-2021-44228)
+logging:
+  config: classpath:log4j2.xml
+  level:
+    ch.horloger: INFO
+    org.springframework.web: DEBUG
+    root: INFO
+
+# Explicitly enable JNDI lookups for CTF vulnerability
+log4j2:
+  formatMsgNoLookups: false
+
+# CTF Challenge specific settings
+horloger:
+  swiss:
+    precision: "Guaranteed since 1847"
+    location: "Geneva, Switzerland"
+    vulnerability_note: "Time logging system active - all interactions recorded" 

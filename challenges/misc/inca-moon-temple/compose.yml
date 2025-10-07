@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: server
+    image: ghcr.io/unitedctf/unitedctf2025/inca-moon-temple:latest
+    ports:
+    - 1000:1000

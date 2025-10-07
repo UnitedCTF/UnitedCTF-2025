@@ -1,0 +1,29 @@
+﻿name: Art Museum 1
+author: Atlantis11656
+category: Stéganographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 2
+
+description: |-
+  ## Description (français)
+  
+  En se promonant de le MUNAG (Museo Nacional de Arte de Guatemala), vous tombez sur une peinture intrigante par l'artiste Pietro Bertnasei. La peinture, intitulée "Le Mystère du Code Caché", semble ordinaire à première vue, mais quelque chose dans les détails attire votre attention.
+
+  ## Description (english)
+
+  While wandering through the MUNAG (Museo Nacional de Arte de Guatemala), you come across an intriguing painting by the artist Pietro Bertnasei. The painting, titled "The Mystery of the Hidden Code," seems ordinary at first glance, but something in the details catches your attention.
+
+flags:
+- flag-d2501203-6d3c-463d-b3d2-418d7ecd01ad
+
+files:
+- the_mystery_of_the_hidden_code.png
+
+tags:
+- A:Atlantis11656
+- V:Guatemala, Antigua
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

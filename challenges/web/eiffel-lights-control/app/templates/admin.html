@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="night">
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="star"></div>
+<div class="canvas">
+    <div class="non_ground">
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tower">
+            <div class="base">
+                <div class="base_side left"></div>
+                <div class="base_side right"></div>
+                <div class="base_arc"></div>
+            </div>
+            <div class="lower_post"></div>
+            <div class="middle">
+                <div class="middle_side left"></div>
+                <div class="middle_side right"></div>
+            </div>
+            <div class="higher_post"></div>
+            <div class="top">
+                <div class="top_side"></div>
+            </div>
+            <div class="peak">
+                <div class="peak_lower"></div>
+                <div class="peak_middle"></div>
+                <div class="peak_top"></div>
+            </div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+
+    </div>
+
+    <div class="ground">
+    </div>
+    <div class="cloud"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+</div>
+<div class="topnav">
+    <a href="/lights">Lights status</a>
+    <a href="/logout">Logout</a>
+</div>
+{% if flag %}
+    <div class="announcement">{{ flag }}</div>
+{% endif %}
+<form method="post" action="/admin">
+    <h3>Admin Panel</h3>
+
+    <label for="url">Clock service url</label>
+    <input type="text" placeholder="Service url" id="url" name="url" value="http://127.0.0.1:5123">
+
+    {% if message %}
+        <div class="message">{{ message }}</div>
+    {% endif %}
+
+    <button>Activate Lights</button>
+    
+</form>
+<script type="text/javascript">
+function getRandom(min, max) {
+  return Math.random() * (max - min) + min;
+}
+const stars = document.querySelectorAll('.star');
+stars.forEach((star, index) => {
+  const top = getRandom(0, 100) + 'vh';
+  const left = getRandom(0, 100) + 'vw';
+  const delay = getRandom(0, 15) + 's';
+
+  star.style.top = top;
+  star.style.left = left;
+  star.style.animationDelay = delay;
+});
+</script>
+</body>
+</html>

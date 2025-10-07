@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="canvas">
+    <div class="non_ground">
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tower">
+            <div class="base">
+                <div class="base_side left"></div>
+                <div class="base_side right"></div>
+                <div class="base_arc"></div>
+            </div>
+            <div class="lower_post"></div>
+            <div class="middle">
+                <div class="middle_side left"></div>
+                <div class="middle_side right"></div>
+            </div>
+            <div class="higher_post"></div>
+            <div class="top">
+                <div class="top_side"></div>
+            </div>
+            <div class="peak">
+                <div class="peak_lower"></div>
+                <div class="peak_middle"></div>
+                <div class="peak_top"></div>
+            </div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+        <div class="tree">
+            <div class="tree_leaves"></div>
+            <div class="tree_stem"></div>
+        </div>
+
+    </div>
+
+    <div class="ground">
+    </div>
+    <div class="cloud"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+</div>
+<form method="post" action="/login">
+    <h3>Eiffel Lights Control System</h3>
+
+    <label for="username">Username</label>
+    <input type="text" placeholder="Email or Phone" id="username" name="username">
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password" name="password">
+
+    {% if error %}
+        <div class="message">{{ error }}</div>
+    {% endif %}
+
+    <button>Log In</button>
+
+    
+</form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+name: Auto Decrypting System 1
+author: Romain
+category: Forensiques
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 3
+
+files:
+- archlinux.qcow2
+- archlinux.vdi
+- archlinux.vmdk
+- SHA256SUMS
+
+description: |-
+  ## Description (français)
+
+  Ayant besoin de plus d'aventure dans votre vie, vous avez décidé d'aller visiter la
+  Corée du Nord pour votre prochain voyage. Malheureusement, vous avez récupéré
+  la mauvaise valise à l'aéroport. En l'ouvrant, vous découvrez un ordinateur qui
+  semble appartenir à un hacker nord-coréen. Vous décidez de l'explorer pour voir
+  ce que vous pouvez en apprendre, mais on dirait que le disque dur est chiffré.
+
+  Vous pouvez télécharger au choix l'image disque au format qcow2, vmdk (VMware) ou vdi (VirtualBox).
+
+  IMPORTANT : Vous n'avez pas besoin d'extraire la mémoire vive de la machine virtuelle
+  pour résoudre ce défi. Si vous le faites, vous ne pourrez pas obtenir la majorité des flags.
+
+  Commande pour démarrer la VM avec l'image qcow2 :
+
+  ```
+  qemu-system-x86_64 -enable-kvm -cpu host -m 4G -smp 2 -drive file=archlinux.qcow2,if=virtio
+  ```
+
+  ## Description (english)
+
+  Looking for more adventure in your life, you decided to visit North Korea for your
+  next trip. Unfortunately, you picked up the wrong suitcase at the airport. When
+  you open it, you find a computer that seems to belong to a North Korean hacker.
+  You decide to explore it to see what you can learn, but it looks like the hard drive
+  is encrypted.
+
+  You can download the disk image in either qcow2, vmdk (VMware), or vdi (VirtualBox) format.
+
+  IMPORTANT: You do not need to extract the RAM of the virtual machine to solve this challenge.
+  If you do, you will not be able to obtain most of the flags.
+
+  Command to start the VM with the qcow2 image:
+
+  ```
+  qemu-system-x86_64 -enable-kvm -cpu host -m 4G -smp 2 -drive file=archlinux.qcow2,if=virtio
+  ```
+
+flags:
+- flag-e0219a0535a7a028
+
+tags:
+- A:Romain
+- V:Corée du Nord, Pyongyang
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4

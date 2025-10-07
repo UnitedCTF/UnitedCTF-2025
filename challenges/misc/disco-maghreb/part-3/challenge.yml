@@ -1,0 +1,36 @@
+name: Disco Maghreb - Paroldle
+author: Yxène & YoannSab
+category: Varia
+
+type: ansible
+
+image: ghcr.io/unitedctf/unitedctf2025/disco-maghreb/part-3:latest
+playbook_name: tcp
+deploy_parameters:
+  chall_name: disco-maghreb-3
+  published_ports: [22, 8080]
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:M/HSFC:N=4-7
+value: 5
+
+description: |-
+  ## Description (français)
+
+  Durant votre visite d'Oran en Algérie, vous tombez sur la mythique boutique *Disco Maghreb*, véritable berceau du [Raï](https://fr.wikipedia.org/wiki/Ra%C3%AF) ! Pour promouvoir ce genre musical auprès des nouvelles générations, un serveur MCP permet de consulter en ligne le catalogue de la boutique.<br>
+  La boutique propose également de consulter en ligne les paroles de ses chansons. Assurez-vous toutefois que cette fonctionnalité soit correctement sécurisée.
+
+  ## Description (english)
+  During your visit to Oran, Algeria, you come across the legendary shop Disco Maghreb, the true birthplace of [Raï](https://en.wikipedia.org/wiki/Ra%C3%AF) ! To help promote this musical genre to new generations, an MCP server provides online access to the shop's catalog.<br>
+  The shop also offers access to the lyrics of its songs. However, make sure this feature is properly secured.
+
+flags:
+- flag-d1sc0_m4ghreb_f0r3v3r-5k2TT5iz
+
+tags:
+- A:Yxène & YoannSab
+- V:Algérie, Oran
+- CFSS:0.3/TS:B/E:M/HSFC:N=4-7
+
+requirements:
+- "Disco Maghreb - Catalogue"

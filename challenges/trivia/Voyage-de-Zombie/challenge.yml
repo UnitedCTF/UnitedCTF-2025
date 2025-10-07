@@ -1,0 +1,40 @@
+name: Voyage de Zombie
+author: Lea1496
+category: Trivia
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 1
+
+description: |-
+  ## Description (français)
+
+  Il y a des dizaines d'aéroports au Québec, mais malheureusement certains ne survivent pas à l'épreuve du temps.
+
+  Un en particulier a été utilisé pour le tournage d'un film de zombies.
+
+  Quel est le code IATA de cet aéroport?
+
+  Format : CODE
+
+  ## Description (english)
+
+  There are dozens of aeroports in Quebec, but unfortunatly some of them don't survive the test of time.
+
+  One in particular was used for the filming of a zombie movie.
+
+  What is the IATA code of this aeroport?
+
+flags:
+- {
+  type: "static",
+  content: "YMX",
+  data: "case_insensitive"
+}
+
+tags:
+- A:Lea1496
+- V:???
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

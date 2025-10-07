@@ -1,0 +1,22 @@
+# Poetic Messages
+
+**`Romain`** [](https://github.com/RomainL972)
+
+## Description (français)
+
+Vous avez décidé cette année de partir en voyage en Louisiane, un état américain
+connu pour ses origines françaises. Pendant que vous vous reposez à l'hôtel,
+quelqu'un glisse une clé USB sous la porte de votre chambre. Vous l'ouvrez et
+découvrez un fichier texte contenant un poème. Peut-être que ce poème
+contient un message caché ?
+
+## Description (english)
+
+You decided to travel to Louisiana this year, an American state known for its
+French origins. While you are resting in your hotel room, someone slides a USB
+key under your door. You open it and find a text file containing a poem. Maybe
+this poem contains a hidden message?
+
+## Solution
+
+Solution of the challenge can be found [here](solution.py).

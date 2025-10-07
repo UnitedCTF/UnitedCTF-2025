@@ -1,0 +1,41 @@
+name: Eiffel Lights Control System 2
+author: Wills
+category: Web
+
+image: ghcr.io/unitedctf/unitedctf2025/eiffel-lights-control:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: eiffel-lights-control
+
+type: ansible
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:M/HSFC:N=4-7
+value: 5
+
+description: |-
+  ## Description (français)
+  Malheureusement, tu découvres que John n'avait pas les droits pour controler les lumières de la tour Eiffel:
+  il pouvait seulement les surveiller.
+
+  Tu te dis que peut-être qu'un autre compte détient les privilèges nécessaires...
+
+  ## Description (english)
+  Unfortunately, you discover that John never had the rights to control the Eiffel Tower's lights—he could
+  only monitor them.
+
+  You wonder if perhaps another account holds the privileges you need…
+
+flags:
+  - flag-4dm1n_p4ssw0rd_1s_n0t_4lw4ys_4dm1n_81326a25
+
+files:
+- app.py
+
+requirements:
+  - "Eiffel Lights Control System 1"
+
+tags:
+  - A:Wills
+  - V:France, Paris
+  - CFSS:0.3/TS:B/E:M/HSFC:N=4-7

@@ -1,0 +1,112 @@
+@startuml
+title Flux d'Exécution du Bytecode Niveau 5
+
+start
+
+:Ouvrir le fichier "/jumbled_flag";
+note right: OpenCommand - Mode 0 (lecture) vers R15
+
+:Créer un tampon de 8 octets;
+note right: CreatePtrCommand - Allouer tampon dans R10
+
+:Définir le compteur de boucle à 2;
+note right: SetLoopCounterCommand
+
+partition "Phase 1: Boucle de Déchiffrement Initial" {
+  :Début de boucle (ID: 101);
+  repeat
+    :Lire 8 octets du fichier vers le tampon;
+    note right
+      ReadCommand
+      Taille: 8 octets
+      De: R15 (descripteur de fichier)
+      Vers: R10 (tampon)
+    end note
+    
+    :Charger les données du tampon vers R11;
+    note right: LoadFromBufferCommand - Décalage 0
+    
+    :XOR R11 avec la clé codée en dur;
+    note right
+      XORValueCommand
+      Clé: 0xBAADF00DDEADBEEF
+    end note
+    
+    :Afficher les données déchiffrées;
+    note right: PrintCommand R11
+    
+  :Itérer la boucle (ID: 101);
+  repeat while (compteur de boucle > 0)
+}
+
+:Définir R14 à 0;
+note right: SetValueCommand - Initialiser R14
+
+:Créer la chaîne "R3VER53!" dans RBX;
+note right
+  CreateStringCommand
+  Chaîne: "R3VER53!"
+  Registre: RBX, ID: 1
+end note
+
+:Lire 8 octets pour l'entrée de mot de passe;
+note right
+  ReadCommand
+  De: R14 (stdin)
+  Vers: R10 (tampon)
+end note
+
+:Charger les données de mot de passe vers R11;
+
+:Créer une commande de saut (ID: 100);
+
+partition "Phase 1.5: Validation du Mot de Passe" {
+  if (R11 == RBX?) then (mot de passe correspond à "R3VER53!")
+    :Ajouter l'étiquette vraie (ID: 100);
+    :Définir R14 à 3;
+    note right: SetValueCommand - Boucler 3 fois
+    
+    :Définir le compteur de boucle depuis R14;
+    note right: SetLoopCounterFromRegisterCommand
+    
+    partition "Phase 2: Boucle de Déchiffrement Avancé" {
+      :Début de boucle (ID: 102);
+      repeat
+        :Lire 8 octets du fichier vers le tampon;
+        note right
+          ReadCommand
+          De: R15 (fichier)
+          Vers: R10 (tampon)
+        end note
+        
+        :Charger les données du tampon vers R13;
+        note right: LoadFromBufferCommand - Décalage 0
+        
+        :XOR R13 avec R11 (clé actuelle);
+        note right: XORFromRegisterCommand
+        
+        :Ajouter 0x1111111111111111 à R11;
+        note right
+          AddValueCommand
+          Étape d'évolution de clé
+        end note
+        
+        :XOR R13 avec R11 évolué;
+        note right: XORFromRegisterCommand - Deuxième XOR
+        
+        :Afficher les données déchiffrées;
+        note right: PrintCommand R11
+        
+      :Itérer la boucle (ID: 102);
+      repeat while (compteur de boucle > 0)
+    }
+  else (mot de passe incorrect)
+    :Ajouter l'étiquette fausse (ID: 100);
+    :Aller à la fin;
+    note right: Échec de validation du mot de passe
+  endif
+}
+
+stop
+
+@enduml

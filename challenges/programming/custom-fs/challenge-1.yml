@@ -1,0 +1,50 @@
+name: The Mysteries of Down Under 1
+author: Romain
+category: Programmation
+description: |-
+  ## Description (français)
+
+  Lors de ton voyage à Melbourne, tu tombes sur une affiche intrigante dans
+  une ruelle animée. Elle promet une récompense exceptionnelle à quiconque
+  parviendra à déchiffrer leur système de fichiers obscur. L'affiche contient
+  l'adresse d'un serveur et un lien vers le code source. Ta mission :
+  interagir avec leur API, résoudre les énigmes et prouver ta maîtrise du
+  système.
+
+  Commande pour démarrer le serveur localement :
+
+  ```
+  uv run fastapi run part1.py
+  ```
+
+  ## Description (english)
+
+  During your trip to Melbourne, you stumble upon a mysterious poster in a
+  bustling alley. It promises an exceptional reward to anyone who can decipher
+  their obscure file system. The poster includes a server address and a link
+  to the source code. Your mission: interact with their API, solve the puzzles,
+  and prove your mastery of the system.
+
+  Command to start the server locally:
+
+  ```
+  uv run fastapi run part1.py
+  ```
+value: 5
+
+image: ghcr.io/unitedctf/unitedctf2025/custom-fs/part-1:latest
+connection_info: https://mysteries-down-under-1.challenges.unitedctf.ca/
+
+flags:
+- flag-b9725e4030930a93
+
+files:
+- part1-dist.tar.gz
+
+tags:
+- A:Romain
+- V:Australie, Melbourne
+- CFSS:0.3/TS:B/E:M/HSFC:N=4-7
+playbook_name: static_http
+deploy_parameters:
+  chall_name: mysteries-down-under-1

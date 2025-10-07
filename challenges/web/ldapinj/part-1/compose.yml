@@ -1,0 +1,23 @@
+services:
+  ldap:
+    build: ./ldap
+    image: ghcr.io/unitedctf/unitedctf2025/ldapinj/part-1/ldap:latest
+    environment:
+      LDAP_ORGANISATION: "Ville de Cloridorme"
+      LDAP_DOMAIN: "cloridorme.unitedctf"
+      LDAP_ADMIN_PASSWORD: royaumedefinlande
+      LDAP_TLS: "false"
+
+  api:
+    build: ./api
+    image: ghcr.io/unitedctf/unitedctf2025/ldapinj/part-1/api:latest
+    depends_on:
+      - ldap
+
+  nginx:
+    build: ./frontend
+    image: ghcr.io/unitedctf/unitedctf2025/ldapinj/part-1/frontend:latest
+    ports:
+      - 8001:80
+    depends_on:
+      - api

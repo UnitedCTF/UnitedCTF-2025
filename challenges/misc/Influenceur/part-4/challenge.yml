@@ -1,0 +1,32 @@
+name: Influenceur 4
+author: Otaphoque
+category: Communications
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.2/TS:L/E:L/HSFC:N=1-2
+value: 1
+
+description: |-
+  Bon, c'est l'heure de mon premier vol. Enfin, non le dernier plutôt. Zut, j'ai perdu le compte avec tout ça...
+
+  Note : pour ce challenge, utilisez le post qui a été publié sur Discord.
+
+  ## Description (english)
+
+  Well, it's time for my first flight. Wait, i meant the last one. Well, I lost count with all of that...
+
+  Note: for this challenge, use the post that was published on Discord.
+
+flags:
+- {
+    type: "static",
+    content: "flag-premier_vol_mais_dernier_post",
+    data: "case_insensitive",
+}
+
+tags:
+- A:Otaphoque
+- V:???
+- CFSS:0.2/TS:L/E:L/HSFC:N=1-2

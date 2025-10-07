@@ -1,0 +1,33 @@
+name: Echoes in the deep 3
+author: Wills
+category: Stéganographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 2
+
+description: |-
+  ## Description (français)
+  
+  Lors de votre excursion sous-marine à bord du Titan, dans les abysses de l'océan Atlantide, vous percevez des signaux mystérieux résonnant autour de votre sous-marin.
+
+  Dans leur lenteur, tu as le pressentiment qu'un dernier secret repose encore dans les echos.
+
+  ## Description (english)
+
+  During your submarine expedition aboard the Titan, in the abyss of the Atlantic ocean, you perceive mysterious signals resonating around your vessel.
+  
+  In their slowness, you feel the premonition that one last secret still rests in the echoes.
+
+flags:
+- flag-y0u_4r3_4_tru3_sch0l4r_f24f9a6b8689fcd7
+
+files:
+- titan.pcapng
+
+tags:
+- A:Wills
+- V:41.7344°N 49.9424°W
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

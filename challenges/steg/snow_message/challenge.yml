@@ -1,0 +1,37 @@
+name: Message dans la neige
+author: Atlantis11656
+category: Stéganographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 1
+
+description: |-
+  ## Description (français)
+  
+  Vous venez d'arriver au magnifique **Frostfjäll Retreat**, un complexe touristique niché dans les montagnes reculées du Jämtland en Suède. Pendant que vous savourez votre café chaud près du feu de cheminée, vous recevez un message mystérieux d'un autre client:
+  
+  *"J'ai laissé un message secret dans la brochure du resort. Il est caché dans la neige..."*
+  
+  Saurez-vous découvrir ce message caché dans les flocons de neige numériques?
+
+  ## Description (english)
+  
+  You've just arrived at the beautiful **Frostfjäll Retreat**, a resort nestled in the remote Jämtland mountains of Sweden. While enjoying your hot coffee by the fireplace, you receive a mysterious message from another guest:
+  
+  *"I left a secret message in the resort brochure. It's hidden in the snow..."*
+  
+  Can you discover this message hidden in the digital snowflakes?
+
+flags:
+- flag-cfa3765b-c873-4ccd-befd-1a1ae90e3c9c
+
+files:
+- resort.md
+
+tags:
+- A:Atlantis11656
+- V:Suède, Jämtland
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

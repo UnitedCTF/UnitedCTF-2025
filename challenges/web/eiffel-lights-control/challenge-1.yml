@@ -1,0 +1,43 @@
+name: Eiffel Lights Control System 1
+author: Wills
+category: Web
+
+image: ghcr.io/unitedctf/unitedctf2025/eiffel-lights-control:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: eiffel-lights-control
+
+type: ansible
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 2
+
+description: |-
+  ## Description (français)
+  Lors de ton séjour à Paris, tu rêves d'admirer les lumières de la tour Eiffel..
+
+  Tu te rappelles que ton ami John travaille pour le monument et qu'il t'avais transmis les plans du système de
+  contrôle des lumières.
+
+  Tu te demandes ce qu'il s'est passé avec lui...
+
+  ## Description (english)
+  During your stay in Paris, you dream of seeing the Eiffel Tower's lights.
+
+  You remember that your friend John works for the monument and once shared with you the plans of its
+  lighting control system.
+
+  You wonder what might have happened to him...
+
+
+flags:
+  - flag-j0hn_h4s_b33n_f1r3d_r1p_1cf6bdb6
+
+files:
+- app.py
+
+tags:
+  - A:Wills
+  - V:France, Paris
+  - CFSS:0.3/TS:B/E:L/HSFC:N=2-4

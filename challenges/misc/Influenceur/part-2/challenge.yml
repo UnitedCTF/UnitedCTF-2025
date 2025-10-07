@@ -1,0 +1,30 @@
+name: Influenceur 2
+author: Otaphoque
+category: Communications
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.2/TS:L/E:L/HSFC:N=1-2
+value: 1
+
+description: |-
+  ## Description (français)
+
+  Bien atterri, à moi d'aller conquérir le monde maintenant ! Et si j'envoyais une carte postale à l'un de mes abonnés ?
+
+  ## Description (english)
+
+  Landed safely, now it's time for me to conquer the world! What if I sent a postcard to one of my subscribers?
+
+flags:
+- {
+    type: "static",
+    content: "flag-Amsterdam",
+    data: "case_insensitive",
+}
+
+tags:
+- A:Otaphoque
+- V:???
+- CFSS:0.2/TS:L/E:L/HSFC:N=1-2

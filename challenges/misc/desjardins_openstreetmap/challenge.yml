@@ -1,0 +1,41 @@
+name: Desjardins - OpenStreetMap
+author: Émilio
+category: Varia
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:L/HSFC:N=4-7
+value: 4
+
+description: |-
+  ## Description (français)
+  Connaissez-vous OpenStreetMap? C'est comme Wikipedia, mais pour les cartes! Une tonne de nerds contribuent à documenter le monde entier,
+  quelle belle opportunité pour voyager et découvrir de nouveaux endroits! J'ai récemment fait un voyage à Montréal et j'ai
+  utilisé OpenStreetMap pour trouver DES ARBRES!! J'en ai tellement vu et j'ai même noté leur IDs pour les retrouver plus tard.
+  Voici [la liste des IDs intéressants](trees.txt).
+  
+  _Psst: Desjardins offre régulièrement des stages en cybersécurité. Si ça vous intéresse, [les détails sont ici](/desjardins)._
+  
+  ## Description (english)
+  Do you know OpenStreetMap? It's like Wikipedia, but for maps! A ton of nerds contribute to documenting the whole world,
+  what a great opportunity to travel and discover new places! I recently traveled to Montréal and used OpenStreetMap to find TREES!!
+  I saw so many and even noted their IDs to find them later.
+  Here is [the list of interesting IDs](trees.txt).
+
+  _Psst: Desjardins regularly offers internships in cybersecurity. If you're interested, [the details are here](/desjardins)._
+
+flags:
+- {
+    type: "static",
+    content: "flag-onadesstages",
+    data: "case_insensitive",
+}
+
+files:
+- trees.txt
+
+tags:
+- A:Émilio
+- V:Québec, Montréal
+- CFSS:0.3/TS:I/E:L/HSFC:N=4-7

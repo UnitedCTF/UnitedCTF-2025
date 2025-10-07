@@ -1,0 +1,33 @@
+name: United Cruiselines 1
+author: Wills
+category: Web
+
+image: ghcr.io/unitedctf/unitedctf2025/ticketboot:latest
+playbook_name: dynamic_http
+deploy_parameters:
+  chall_name: united-cruiselines
+
+type: ansible
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 2
+
+description: |-
+  ## Description (français)
+  Tu désires acheter un billet pour une croisière de rêve à travers les îles grecques avec United Cruiselines.
+
+  Mais quelque chose te semble étrange dans le système de billetterie...
+
+  ## Description (english)
+  You're looking to book a dream cruise through the Greek islands with United Cruiselines.
+
+  But something feels off about the ticketing system...
+
+flags:
+  - flag-w3lc0m3_t0_th3_t1ck3t_b00t_e058b670
+
+tags:
+  - A:Wills
+  - V:Grèce, Athènes
+  - CFSS:0.3/TS:L/E:L/HSFC:N=1-2

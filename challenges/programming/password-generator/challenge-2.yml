@@ -1,0 +1,31 @@
+name: Password Generator 2
+author: Capucinoxx
+category: Programmation
+description: |-
+  ## Description (français)
+
+  Des mises à jour de sécurité ont été effectuées sur certaines
+  applications pour "renforcer" les règles de mot de passe.
+
+  ## Description (english)
+
+  Security updates have been rolled out for certain applications to
+  "tighten" password rules.
+value: 9
+
+image: ghcr.io/unitedctf/unitedctf2025/password-generator:latest
+connection_info: https://password-generator.challenges.unitedctf.ca/
+
+flags:
+- flag-al@mano0uAvecZ3
+
+tags:
+- A:Capucinoxx
+- V:États-Unis, Burlington
+- CFSS:0.3/TS:I/E:H/HSFC:N=9-14
+
+requirements:
+- Password Generator 1
+deploy_parameters:
+  chall_name: password-generator
+playbook_name: static_http

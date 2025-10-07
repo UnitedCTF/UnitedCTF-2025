@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambridge Hotel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/form.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container d-flex flex-column gap-4 mt-5">
+        <header>
+            <h1 class="text-center mt-3"><a href="/" class="unstyled">Cambridge Hotel</a></h1>
+        </header>
+
+        <section>
+            <p>
+                Depuis la récente brèche de sécurité au niveau des clés de chambres, nous avons accru nos mesures de
+                sécurité à l'accueil.
+                Cependant, nous sommes conscients qu'un risque demeure au niveau des clés de chambres volées.
+            </p>
+            <p class="mb-0">
+                Vous pouvez utiliser le formulaire ci-dessous pour déterminer si vous êtes à risque. Si c'est le cas,
+                n'hésitez pas à venir à la réception pour <a href="/reset.html">obtenir une nouvelle clé de chambre</a>.
+            </p>
+        </section>
+
+        <section>
+            <form class="text-bg-light p-3 rounded" id="check-form">
+                <div class="mb-3">
+                    <input type="text" name="roomCode" minlength="4" maxlength="24" pattern="CBG:\d+" class="form-control"
+                        placeholder="Numéro de chambre" required>
+                    <div class="form-text">Le code de chambre débute par CBG: suivi du nombre inscrit sur votre porte.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <input type="text" name="roomKey" minlength="16" maxlength="16" pattern="[\da-f]+" class="form-control"
+                        placeholder="Clé de chambre" required>
+                    <div class="form-text">La clé de chambre est une séquence de 16 caractères.</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Vérifier</button>
+            </form>
+        </section>
+
+        <section>
+            <div class="alert alert-info">
+                <p class="m-0">
+                    Par souci de transparence, vous pouvez consulter le <a href="/server.tar.gz" class="alert-link">code
+                        source</a> de notre site web afin de valider par vous même la qualité de nos nouvelles mesures
+                    de sécurité.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <p>
+                4 W Main St Cambridge, NY 12816<br>
+                © Tout droits réservés
+            </p>
+        </footer>
+    </div>
+
+    <script src="/breach.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

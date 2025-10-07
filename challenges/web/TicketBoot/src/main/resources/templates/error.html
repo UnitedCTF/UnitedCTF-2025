@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>United Cruiselines Ticket Booth</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" th:href="@{/css/styles.css}" />
+</head>
+<body>
+<div id="sun"></div>
+<div id="sunSet"></div>
+<div id="sky"></div>
+<div id="horizon"></div>
+<div id="division"></div>
+<div id="water"></div>
+<div id="waterReflectionContainer">
+    <div id="waterReflectionMiddle"></div>
+</div>
+
+<div id="waterDistance" ></div>
+<div id="oceanRippleContainer"></div>
+<div id="oceanRipple"></div>
+<div style="position: relative; z-index: 9999;">
+    <h1 style="font-family: 'Comic Sans MS', cursive, sans-serif; color: #ff5722; text-align: center; padding-top: 10vh;">
+        🏖️ Oops! This Section Is Off-Limits 🏖️
+    </h1>
+    <p style="font-family: 'Comic Sans MS', cursive, sans-serif; color: #333; text-align: center; font-size: 1.5em;">
+        You're not supposed to be here... <br> Grab a 🍹, relax, and head back to the <a href="/" style="color: #2196f3; text-decoration: underline;">main page</a>.
+    </p>
+    <p>
+        Here is your error :
+        <div class="col-md-8">
+            <span th:text="${error}"></span>
+        </div>
+        <div class="col-md-8">
+            <span th:text="${errorMessage}"></span>
+        </div>
+    </p>
+</div>
+</body>
+<!-- /app/resources/templates/index.html -->

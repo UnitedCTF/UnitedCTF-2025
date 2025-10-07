@@ -1,0 +1,51 @@
+{% set calling_template = "index.html" %}
+{% extends "base.html" %}
+
+{% block content %}
+<div id="cloud-container"><div id="cloud-container-inner"></div></div>
+
+<div class="container">
+    <div class="row with-some-room">
+        <div class="col-md-10 offset-md-1 d-flex flex-column align-items-center gap-4">
+            <img class="w-100 mx-auto d-block logo" src="/themes/core-travel/static/img/logo-avion.png">
+            <div class="row w-100">
+                <div class="col">
+                    <h3 class="text-left">Départ</h3>
+                    <h3 class="fw-bold text-left">19 septembre à 18:00</h3>
+                </div>
+                <div class="col">
+                    <h3 class="text-end">Arrivée</h3>
+                    <h3 class="fw-bold text-end">26 septembre à 18:00</h3>
+                </div>
+            </div>
+            <a href="/register" class="btn btn-primary my-5">Enregistrez-vous!</a>
+            <section>
+                <h2 class="text-center fw-bold mb-3">Partenaires <span style="color:gold">Or</span></h2>
+                <div class="sponsors sponsors-gold">
+                    <a href="/desjardins"><img alt="Desjardins"
+                            src="/themes/core-travel/static/img/sponsors/desjardins.png"></a>
+                    <a href="/mcn"><img alt="Ministère de la Cybersécurité et du Numérique"
+                            src="/themes/core-travel/static/img/sponsors/mcn.svg"></a>
+                    <a href="https://cybereco.ca/"><img alt="Cybereco"
+                            src="/themes/core-travel/static/img/sponsors/cybereco.png"></a>
+                </div>
+                <h2 class="text-center fw-bold mb-4 mt-5">Partenaires <span style="color:white">Argent</span></h2>
+                <div class="sponsors sponsors-silver">
+                    <a href="https://www.usherbrooke.ca/pole-cybersecurite/"><img alt="Pôle d'expertises en cybersécurité Intact" src="/themes/core-travel/static/img/sponsors/pole-intact.png"></a>
+                    <a href="/imc2" class="p-3"><img alt="IMC2" src="/themes/core-travel/static/img/sponsors/imc2.svg"></a>
+                </div>
+                <h2 class="text-center fw-bold mb-4 mt-5">Partenaires <span style="color:#cd7f32">Bronze</span></h2>
+                <div class="sponsors sponsors-silver">
+                    <a href="https://nsec.io/"><img alt="NorthSec"
+                            src="/themes/core-travel/static/img/sponsors/nsec.png"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+{{ Assets.js("assets/js/homepage.js") }}
+{{ Assets.js("assets/js/index.js") }}
+{% endblock %}

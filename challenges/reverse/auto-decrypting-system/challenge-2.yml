@@ -1,0 +1,33 @@
+name: Auto Decrypting System 2
+author: Romain
+category: Forensiques
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:M/HSFC:N=4-7
+value: 4
+
+requirements:
+  - "Auto Decrypting System 1"
+
+description: |-
+  ## Description (français)
+
+  Vous avez réussi à monter la partition de démarrage de l'ordinateur, félicitations !
+  Cependant, le reste du disque est chiffré... Mais où se trouve le programme
+  d'auto-déchiffrement qui se lance automatiquement au démarrage de l'ordinateur ?
+
+  ## Description (english)
+
+  You managed to mount the boot partition of the computer, congratulations!
+  However, the rest of the disk is encrypted... But where is the auto-decrypting
+  program that runs automatically at boot?
+
+flags:
+- flag-382b4c81f98402cd
+
+tags:
+- A:Romain
+- V:Corée du Nord, Pyongyang
+- CFSS:0.3/TS:B/E:M/HSFC:N=4-7

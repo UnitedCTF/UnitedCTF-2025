@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+body {
+    background-color: #52796F;
+    color: #eee;
+}
+
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem 0 1rem 0;
+}
+
+.text-bg-dark {
+    color: #eee !important;
+    background-color: #354F52 !important;
+    border-color: #2F3E46 !important;
+}
+
+.unstyled, .unstyled:link, .unstyled:visited, .unstyled:hover, .unstyled:active {
+    color: inherit;
+    text-decoration: inherit;
+    font-weight: inherit;
+}
+
+@media(min-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}

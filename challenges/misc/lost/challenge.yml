@@ -1,0 +1,32 @@
+name: Lost
+author: KptCheeseWhiz
+category: Varia
+description: |-
+  ## Description (français)
+
+  Vous avez décidé de couper à travers le bois lors d'une randonnée sur l'ile de Madagascar et vous vous êtes perdu. Votre ami Paul vous a laissé une adresse IP, un port et des identifiants pour vous aider à retrouver votre chemin, mais vous n'avez aucune idée comment ça fonctionne. Réussirez-vous à utiliser ces informations pour retrouver votre chemin avant qu'il ne soit trop tard?
+
+  ## Description (english)
+
+  You decided to cut through the woods during a hike on the island of Madagascar and got lost. Your friend Paul left you an IP address, a port and credentials to help you find your way, but you have no idea how it works. Will you be able to use this information to find your way before it's too late?
+
+  Username: paul
+  Password: i_hope_you_wont_need_this
+value: 6
+
+image: ghcr.io/unitedctf/unitedctf2025/lost:latest
+connection_info: tcp://challenges.unitedctf.ca:32995
+
+flags:
+- flag-idk_where_you_are_but_heres_a_flag_for_your_trouble_4a1818496f8c0048
+
+tags:
+- A:KptCheeseWhiz
+- V:Madagascar, Antanarivo
+- CFSS:0.3/TS:I/E:M/HSFC:N=6-10
+playbook_name: tcp
+deploy_parameters:
+  chall_name: lost
+  user_name: global
+  published_ports:
+  - 10456

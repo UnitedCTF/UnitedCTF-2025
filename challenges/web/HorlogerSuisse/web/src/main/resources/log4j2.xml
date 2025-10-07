@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <!-- VULNERABLE: Enable JNDI lookups for CTF challenge -->
+    <Properties>
+        <Property name="log4j2.formatMsgNoLookups">false</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        
+        <File name="FileAppender" fileName="/var/log/horloger/application.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+        
+        <File name="SecurityLog" fileName="/var/log/horloger/security.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [SECURITY] %msg%n"/>
+        </File>
+    </Appenders>
+    
+    <Loggers>
+        <!-- VULNERABLE CONFIGURATION: JNDI lookups enabled for CTF challenge -->
+        <!-- This allows ${jndi:ldap://...} and similar injection attacks -->
+        <Logger name="ch.horloger.controller.HorlogerController" level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileAppender"/>
+            <AppenderRef ref="SecurityLog"/>
+        </Logger>
+        
+        <Logger name="org.springframework.web" level="DEBUG" additivity="false">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileAppender"/>
+        </Logger>
+        
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration> 

@@ -1,0 +1,41 @@
+name: Cypherpunks - Border
+author: MyMelody1242
+category: Cryptographie
+description: |-
+  ## Description (français)
+
+  Sur la blockchain, tout est public.
+
+  Certaines invitations ont été contrefaites et la tienne en fait partie. Par contre, il y a toujours moyen de moyenner...
+
+  PSSSSS : marche sur les traces de  ... https://solscan.io/account/5Ls23YV6jKM9ZcYvwZsVrCcHy2CY1hWoN9PSxJ41suy1?cluster=devnet, peut-être que tu aurais besoin de quelques lamports..
+
+  ## Description (english)
+
+  On the blockchain, everything is public.
+
+  Some invitations have been forged, and yours is one of them.
+  On the other hand, there’s always a way to work things out...
+
+  PSSSSS: follow the footsteps of ... https://solscan.io/account/5Ls23YV6jKM9ZcYvwZsVrCcHy2CY1hWoN9PSxJ41suy1?cluster=devnet, maybe you'll need some lamports ...
+value: 3
+
+image: ghcr.io/unitedctf/unitedctf2025/cypherpunks:latest
+connection_info: https://cypherpunks.challenges.unitedctf.ca/
+
+flags:
+- flag-L0ng_t1m3_n0_s33!
+
+files:
+- snippet_kit.tar.gz
+
+tags:
+- A:MyMelody1242
+- V:États-Unis, Austin
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+
+requirements:
+- Cypherpunks - Visa
+playbook_name: static_http
+deploy_parameters:
+  chall_name: cypherpunks

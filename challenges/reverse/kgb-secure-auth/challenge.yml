@@ -1,0 +1,43 @@
+name: KGB Secure Authentication
+author: Romain
+category: Rétro-ingénierie
+description: |-
+  ## Description (français)
+
+  En dépit des conseils aux voyageurs du gouvernement du Canada, votre prochaine
+  destination de voyage est Moscou, la capitale de la Russie ! Vous avez entendu parler d'un
+  nouveau système d'authentification sécurisé utilisé par le KGB, et vous êtes curieux
+  de savoir comment il fonctionne. En explorant un ancien bureau du KGB, vous arrivez
+  à vous connecter à un réseau sécurisé, vous permettant de communiquer avec le système
+  d'authentification. Votre mission, si vous l'acceptez, est de contourner les défenses
+  du système et de découvrir le mot de passe secret qui vous permettra de vous authentifier.
+
+  ## Description (english)
+
+  Despite the Canadian government's travel advisories, your next travel destination is
+  Moscow, the capital of Russia! You've heard about a new secure authentication system
+  used by the KGB, and you're curious to find out how it works. While exploring an
+  old KGB office, you manage to connect to a secure network, allowing you to communicate
+  with the authentication system. Your mission, should you choose to accept it, is to
+  bypass the system's defenses and discover the secret password that will allow you to
+  authenticate.
+value: 8
+
+image: ghcr.io/unitedctf/unitedctf2025/kgb-secure-auth:latest
+connection_info: tcp://challenges.unitedctf.ca:32776/
+
+flags:
+- flag-cdc04c0cc7f9f0c1
+
+files:
+- src/client
+
+tags:
+- A:Romain
+- V:Russie, Moscou
+- CFSS:0.3/TS:I/E:M/HSFC:Y=7-12
+playbook_name: tcp
+deploy_parameters:
+  chall_name: kgb-secure-auth
+  published_ports:
+  - 1337

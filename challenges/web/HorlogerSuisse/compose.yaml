@@ -1,0 +1,4 @@
+services:
+  challenge:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/horloger-suisse:latest

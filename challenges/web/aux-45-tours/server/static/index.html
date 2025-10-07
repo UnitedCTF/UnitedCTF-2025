@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/disk.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aux 45 tours</title>
+
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <div class="center">
+      <img class="rotating" src="/vinyl.png">
+    </div>
+    
+    <div class="container center">
+        <h1>Aux 45 tours</h1>
+        <h2>Épurez votre musique!</h2>
+        <form action="/api/convert" method="post" enctype="multipart/form-data">
+            <input name="file" type="file" accept=".flac,.wav,.mp3,.m4a,.wma,.ogg">
+            <button>Lancer l'épuration</button>
+        </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+name: Desjardins - Interception 2
+author: LeRoux
+category: Radio
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:M/HSFC:N=4-7
+value: 4
+
+description: |-
+  ## Description (français)
+
+  Un signal étrange a été intercepté. Pour connaître le message secret, il suffit de demander.
+
+  ## Description (english)
+
+  A strange signal was intercepted. To discover the secret message, you only need to ask.
+
+flags:
+- Flag-L4R4d1oC3stC00L
+
+files:
+- signal.wav
+
+tags:
+- A:LeRoux
+- V:Australie, Alice Springs
+- CFSS:0.3/TS:B/E:M/HSFC:N=4-7

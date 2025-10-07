@@ -1,0 +1,32 @@
+name: Bletchley Park 3
+author: Atlantis11656
+category: Cryptographie
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 2
+
+
+description: |-
+  ## Description (français)
+
+  Pour finir votre visite de Bletchley Park, vous décidez de vous rendre a la Hutte 2, qui était "une hutte de loisirs pour la « bière, le thé et la détente »" selon le musée. En entrant, vous voyez un tableau noir avec des lettres et des symboles écrits à la craie. Il semble que quelqu'un ait essayé de cacher un message secret ici.
+
+  ## Description (english)
+
+  To finish your visit to Bletchley Park, you decide to head to Hut 2, which was "a leisure hut for 'beer, tea and relaxation'" according to the museum. Upon entering, you see a blackboard with letters and symbols written in chalk. It seems someone tried to hide a secret message here.
+
+requirements:
+- Bletchley Park 2
+
+flags:
+- flag-b5ff1438-4bf6-4b1f-8a02-e9edd1dbb545
+
+files:
+- chalkboard.txt
+
+tags:
+- A:Atlantis11656
+- V:Angleterre, Milton Keynes
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4

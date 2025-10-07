@@ -1,0 +1,6 @@
+services:
+  golabook:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/golabook:latest
+    ports:
+    - 8080:8080

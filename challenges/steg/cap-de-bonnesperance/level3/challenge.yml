@@ -1,0 +1,29 @@
+﻿name: Cap de Bonne-Espérance 3
+author: Atlantis11656
+category: Stéganographie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:L/E:L/HSFC:N=1-2
+value: 1
+
+description: |-
+  ## Description (français)
+  
+  Outre le dommage sur l'image, l'image est d'une qualitée exceptionnelle. Je me demande quel genre de appareil photo a pu prendre cette photo...
+
+  ## Description (english)
+
+  Besides the damage to the image, the image is of exceptional quality. I wonder what kind of camera could have taken this photo...
+
+flags:  
+- flag-5bcc18e7-495e-4c95-86d8-df5a38824e0c
+
+requirements:
+  - Cap de Bonne-Espérance 1
+
+tags:
+- A:Atlantis11656
+- V:Afrique du Sud, Cap de Bonne-Espérance
+- CFSS:0.3/TS:L/E:L/HSFC:N=1-2

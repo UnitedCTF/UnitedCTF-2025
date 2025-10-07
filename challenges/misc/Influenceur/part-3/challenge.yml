@@ -1,0 +1,31 @@
+name: Influenceur 3
+author: Otaphoque
+category: Communications
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.2/TS:B/E:L/HSFC:N=2-4
+value: 2
+
+description: |-
+  ## Description (français)
+
+  Au fait, je ne vous ai pas montré ma super valise et tous ses stickers!
+
+  ## Description (english)
+
+  Oh, I didn't show you my amazing suitcase and all its stickers!
+
+
+flags:
+- {
+    type: "static",
+    content: "flag-i_am_a_stickered_suitcase",
+    data: "case_insensitive",
+}
+
+tags:
+- A:Otaphoque
+- V:???
+- CFSS:0.2/TS:B/E:L/HSFC:N=2-4

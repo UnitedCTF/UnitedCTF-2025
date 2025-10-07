@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection - Horloger Suisse</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .luxury-text { color: #d4af37; font-family: serif; }
+        body { padding-top: 76px; }
+        .watch-card { transition: transform 0.3s; }
+        .watch-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand luxury-text" href="/">
+                <i class="fas fa-clock"></i> Horloger Suisse
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/collection">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">À Propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h1 class="text-center luxury-text mb-5">
+            <i class="fas fa-gem"></i> Collection Exclusive
+        </h1>
+        
+        <div class="row mb-4">
+            <div class="col-lg-6">
+                <div class="card watch-card shadow">
+                    <div class="card-body text-center">
+                        <i class="fas fa-crown fa-3x luxury-text mb-3"></i>
+                        <h3>Héritage Royal</h3>
+                        <p>Montre automatique, boîtier or 18k, cadran émaillé</p>
+                        <p class="luxury-text h5">CHF 125,000</p>
+                        <a href="/timepiece/heritage-royal" class="btn btn-dark">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card watch-card shadow">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mountain fa-3x luxury-text mb-3"></i>
+                        <h3>Alpiniste Precision</h3>
+                        <p>Chronographe sport, titane, étanche 500m</p>
+                        <p class="luxury-text h5">CHF 89,000</p>
+                        <a href="/timepiece/alpiniste-precision" class="btn btn-dark">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card watch-card shadow">
+                    <div class="card-body text-center">
+                        <i class="fas fa-star fa-3x luxury-text mb-3"></i>
+                        <h3>Classique Genève</h3>
+                        <p>Mouvement mécanique, cuir alligator</p>
+                        <p class="luxury-text h5">CHF 45,000</p>
+                        <a href="/timepiece/classique-geneve" class="btn btn-dark">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card watch-card shadow">
+                    <div class="card-body text-center">
+                        <i class="fas fa-moon fa-3x luxury-text mb-3"></i>
+                        <h3>Phases Lunaires</h3>
+                        <p>Complications astronomiques, platine</p>
+                        <p class="luxury-text h5">CHF 198,000</p>
+                        <a href="/timepiece/phases-lunaires" class="btn btn-dark">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card watch-card shadow">
+                    <div class="card-body text-center">
+                        <i class="fas fa-bolt fa-3x luxury-text mb-3"></i>
+                        <h3>Tourbillon Moderne</h3>
+                        <p>Tourbillon visible, carbone forgé</p>
+                        <p class="luxury-text h5">CHF 275,000</p>
+                        <a href="/timepiece/tourbillon-moderne" class="btn btn-dark">Découvrir</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <form method="get" action="/search" class="d-inline-block">
+                    <div class="input-group mb-3" style="width: 400px;">
+                        <input type="text" class="form-control" name="q" placeholder="Rechercher un modèle...">
+                        <button class="btn btn-dark" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Horloger Suisse. Tous droits réservés. | Swiss Made Excellence</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

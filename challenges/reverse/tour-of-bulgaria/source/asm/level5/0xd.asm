@@ -1,0 +1,1 @@
+mov ![register]!, [![buffer_location]! + ![offset]!]

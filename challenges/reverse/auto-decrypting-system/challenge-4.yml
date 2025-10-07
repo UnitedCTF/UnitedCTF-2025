@@ -1,0 +1,33 @@
+name: Auto Decrypting System 4
+author: Romain
+category: Rétro-ingénierie
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:I/E:M/HSFC:Y=7-12
+value: 8
+
+requirements:
+  - "Auto Decrypting System 3"
+
+description: |-
+  ## Description (français)
+
+  Nous y sommes presque, je le sens ! Il ne reste plus qu'à déchiffrer le dossier
+  de l'utilisateur `arch`. Les informations qui nous manquent devraient être dans
+  le fichier `/home/arch/flag.txt`.
+
+  ## Description (english)
+
+  We're almost there, I can feel it! We just need to decrypt the `arch` user's
+  home directory. The information we need should be in the `/home/arch/flag.txt`
+  file.
+
+flags:
+- flag-657135ff66ab3614
+
+tags:
+- A:Romain
+- V:Corée du Nord, Pyongyang
+- CFSS:0.3/TS:I/E:M/HSFC:Y=7-12

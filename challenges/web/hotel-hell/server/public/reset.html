@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambridge Hotel</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/form.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container d-flex flex-column gap-4 mt-5">
+        <header>
+            <h1 class="text-center mt-3"><a href="/" class="unstyled">Cambridge Hotel</a></h1>
+        </header>
+
+        <section>
+            <p>
+                Avez-vous oublié votre clé de chambre dans un buisson? Avez-vous été affecté par la récente brèche de sécurité?
+                Si vous avez répondu oui à l'une de ces questions, vous êtes au bon endroit.
+            </p>
+            <p class="mb-0">
+                Vous pouvez utiliser le formulaire ci-dessous pour obtenir une nouvelle clé de chambre. Suite à la soumission du formulaire,
+                une nouvelle clé de chambre sera émise et glissée sous votre porte de chambre.
+            </p>
+        </section>
+
+        <section>
+            <form class="text-bg-light p-3 rounded" id="reset-form">
+                <div class="mb-3">
+                    <input type="text" name="roomCode" minlength="4" maxlength="24" pattern="CBG:\d+" class="form-control"
+                        placeholder="Numéro de chambre" required>
+                    <div class="form-text">Le code de chambre débute par CBG: suivi du nombre inscrit sur votre porte.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Réinitialiser</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>
+                4 W Main St Cambridge, NY 12816<br>
+                © Tout droits réservés
+            </p>
+        </footer>
+    </div>
+
+    <script src="/reset.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

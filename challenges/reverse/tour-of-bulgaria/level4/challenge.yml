@@ -1,0 +1,54 @@
+﻿name: Бургаски Битове (Burgas Bytes)
+author: Atlantis11656
+category: Rétro-ingénierie
+
+type: ansible
+
+image: ghcr.io/unitedctf/unitedctf2025/tour-of-bulgaria/part-4:latest
+playbook_name: tcp
+deploy_parameters:
+  chall_name: tour-of-bulgaria-4
+  published_ports: [1440, 5000]
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 3
+
+files:
+  - commands_v1_1.en.pdf
+  - commands_v1_1.fr.pdf
+
+description: |-
+  ## Description (english)
+  
+  Welcome to Burgas, Bulgaria's largest Black Sea port city! The salty breeze carries stories of ancient trade routes as you explore the bustling harbor. While visiting the maritime museum, you notice the Port Authority's public information terminal is malfunctioning - someone has tampered with their digital event log system.
+  
+  A concerned system administrator approaches you, recognizing your cyber expertise from your previous adventures: "Our event log system has been reset! The tech who worked on this server has been gone for years now, we need someone to help us restore it."
+  
+  Your challenge: Try to find how to restore the admin access using the information you have and the command line access to the server.
+  
+  The port's digital heritage displays depend on your skills - show them the power of precise data restoration!
+  
+  Info: Once you start your instance, the second link is actually http:// not tcp://.
+  ## Description (français)
+  
+  Bienvenue à Burgas, la plus grande ville portuaire bulgare de la mer Noire ! La brise salée porte des histoires d'anciennes routes commerciales pendant que vous explorez le port animé. En visitant le musée maritime, vous remarquez que le terminal d'information publique de l'Autorité Portuaire dysfonctionne - quelqu'un a trafiqué leur système de journal d'événements numériques.
+  
+  Un administrateur système inquiet vous approche, reconnaissant votre expertise cyber de vos aventures précédentes : "Notre système de journal d'événements a été réinitialisé ! Le technicien qui travaillait sur ce serveur est parti depuis des années maintenant, nous avons besoin de quelqu'un pour nous aider à le restaurer."
+  
+  Votre défi : Essayez de trouver comment restaurer l'accès administrateur en utilisant les informations que vous avez et l'accès en ligne de commande au serveur.
+  
+  Les expositions du patrimoine numérique du port dépendent de vos compétences - montrez-leur la puissance de la restauration de données précise !
+
+  Info : Une fois que vous avez démarré votre instance, le deuxième lien est en fait http:// et non tcp://.
+
+flags:
+- flag-4e3941d5-afb5-4255-ac3e-dedaa3fe9174
+
+requirements:
+- Варненски Файлове (Varna Files)
+
+tags:
+- A:Atlantis11656
+- V:Bulgarie, Burgas
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4

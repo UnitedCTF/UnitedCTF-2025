@@ -1,0 +1,6 @@
+services:
+  web:
+    build: server
+    image: ghcr.io/unitedctf/unitedctf2025/hotel-hell:latest
+    ports:
+      - 3000:3000

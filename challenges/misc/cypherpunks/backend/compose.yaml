@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  cypherpunks:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/cypherpunks:latest
+    ports:
+      - "5000:5000"

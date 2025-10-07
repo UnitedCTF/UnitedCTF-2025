@@ -1,0 +1,25 @@
+services:
+  ctfd:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/ctfd:latest
+    ports:
+    - 8000:8000
+    environment:
+      - DATABASE_URL=mysql+pymysql://ctfd:ctfd@db/ctfd
+      - FLASK_ENV=development
+    volumes:
+      - ./core-travel:/opt/CTFd/CTFd/themes/core-travel:ro
+    restart: always
+
+  db:
+    image: mariadb:10.11
+    restart: always
+    environment:
+      - MARIADB_ROOT_PASSWORD=ctfd
+      - MARIADB_USER=ctfd
+      - MARIADB_PASSWORD=ctfd
+      - MARIADB_DATABASE=ctfd
+      - MARIADB_AUTO_UPGRADE=1
+    volumes:
+      - .data:/var/lib/mysql
+    command: [mysqld, --character-set-server=utf8mb4, --collation-server=utf8mb4_unicode_ci, --wait_timeout=28800, --log-warnings=0]

@@ -1,0 +1,9 @@
+services:
+  challenge:
+    build: .
+    image: ghcr.io/unitedctf/unitedctf2025/trampofolies:latest
+    # volumes:
+    #   - ./data:/var/www/data
+    #   - ./images:/var/www/html/images
+    ports:
+      - 8080:80

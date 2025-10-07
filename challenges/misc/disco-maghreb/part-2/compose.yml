@@ -1,0 +1,6 @@
+services:
+  challenge:
+    build: server
+    image: ghcr.io/unitedctf/unitedctf2025/disco-maghreb/part-2:latest
+    ports:
+    - 8080:8080

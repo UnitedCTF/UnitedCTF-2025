@@ -1,0 +1,40 @@
+name: "Les Incas: Temple du Soleil"
+author: Linkster78 & Yxène
+category: PWN
+
+type: ansible
+
+image: ghcr.io/unitedctf/unitedctf2025/inca-sun-temple:latest
+playbook_name: tcp
+deploy_parameters:
+  chall_name: inca-sun-temple
+  published_ports: [1000]
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:Y=3-6
+value: 3
+
+description: |-
+  ## Description (français)
+
+  2500 mètres au-dessus de la mer, les ruines d'une civilisation ancienne se reposent, la civilisation Inca. Vous avez décidé d'en apprendre plus sur celle-ci en visitant le fameux Machu Picchu.
+
+  Lors de votre périple, vous explorez le Temple du Soleil et vous y trouvez un trou dans la roche duquel sort une voix rauque.
+
+  ## Description (english)
+
+  2500 meters above sea level lies the ruins of an ancient empire, the Inca civilisation. You have decided to learn more about it by visiting the famous Machu Picchu.
+
+  During your outing, you explore the Sun Temple. Within its confines, you find a small hole in the stones, a rough voice comes from it.
+
+files:
+- server/challenge
+- server/main.c
+
+flags:
+- flag-caf4c732954438d6
+
+tags:
+- A:Linkster78 & Yxène
+- V:Peru, Machu Picchu
+- CFSS:0.3/TS:B/E:L/HSFC:Y=3-6

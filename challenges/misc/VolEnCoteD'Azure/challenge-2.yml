@@ -1,0 +1,27 @@
+name: Vol en côte d'Azure 2
+author: Seneque
+category: Infonuagique
+
+type: standard
+
+# https://res260.github.io/cfss/
+# CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+value: 3
+
+description: |-
+  ## Description (français)
+  Maintenant que vous avez trouvé les informations compromettantes, continuez votre enquête.
+  
+  ## Description (english)
+  Now that you've found the compromising information, continue your investigation.
+
+flags:
+- flag-databases-should-not-be-accessible-to-everyone
+
+tags:
+- A:Seneque
+- V:France, Côte d'Azur
+- CFSS:0.3/TS:B/E:L/HSFC:N=2-4
+
+requirements:
+- "Vol en côte d'Azure 1"

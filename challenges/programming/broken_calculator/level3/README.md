@@ -1,0 +1,33 @@
+# Broken Calculator - Level 3
+
+**`Atlantis11656`** [GitHub](https://github.com/MassinissaDjellouli)
+
+## Description (français)
+
+Les yeux du vendeur s'illuminent de joie alors que vous maîtrisez la deuxième calculatrice. "Incroyable !" s'exclame-t-il, caressant sa barbe pensivement. "Mais j'ai un dernier test pour vous..." Il fouille au fond d'un tiroir verrouillé et produit ce qui semble être la calculatrice la plus chaotique que vous ayez jamais vue.
+
+"Ceci," dit-il avec révérence, "est mon premier prototype. Non seulement les boutons numériques sont mélangés comme la précédente, mais maintenant les boutons d'opérateurs sont AUSSI aléatoirement recâblés ! Quand vous pensez appuyer sur '+', vous pourriez en fait saisir '%', et quand vous appuyez sur '*', cela pourrait devenir '/' !"
+
+Cette calculatrice de Niveau 3 est le défi ultime, combinant toutes les difficultés précédentes :
+- **Double mélange des boutons** : Les chiffres ET les opérateurs sont aléatoirement recâblés
+- **Mapping des nombres** : Appuyer sur '7' pourrait saisir '2', appuyer sur '0' pourrait saisir '9'
+- **Mapping des opérateurs** : Appuyer sur '+' pourrait saisir '*', appuyer sur '/' pourrait saisir '%'. Les boutons ( ) restent fonctionnels.
+
+Le vendeur vous observe avec anticipation alors que vous faites face à ce labyrinthe mathématique. "Si vous pouvez résoudre ceci," murmure-t-il, "vous êtes vraiment un maître de la logique cassée !"
+
+## Description (english)
+
+The vendor's eyes light up with delight as you conquer the second calculator. "Incredible!" he exclaims, stroking his beard thoughtfully. "But I have one final test for you..." He reaches deep into a locked drawer and produces what appears to be the most chaotic calculator you've ever seen.
+
+"This," he says with reverence, "is my first prototype. Not only are the number buttons scrambled like the previous one, but now the operator buttons are ALSO randomly rewired! When you think you're pressing '+', you might actually be inputting '%', and when you press '*', it could become '/'!"
+
+This Level 3 calculator is the ultimate challenge, combining all previous difficulties:
+- **Number Mapping**: Pressing '7' might input '2', pressing '0' might input '9'
+- **Operator Mapping**: Pressing '+' might input '*', pressing '/' might input '%'. The ( ) buttons remain functional.
+
+The vendor watches with anticipation as you face this mathematical labyrinth. "If you can solve this," he whispers, "you truly are a master of broken logic!"
+
+
+## Solution
+
+Solution of the challenge can be found [here](solution/README.md).
